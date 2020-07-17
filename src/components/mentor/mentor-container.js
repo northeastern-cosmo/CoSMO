@@ -17,6 +17,7 @@ const mentor1 = {
   lastName: "Arora",
   year: 2,
   major: "CS/business",
+  email: "test@test.com",
 }
 
 const mentor2 = {
@@ -24,6 +25,7 @@ const mentor2 = {
   lastName: "Busemeyer",
   year: 5,
   major: "CS/cognitive psychology",
+  email: "test@test.com",
 }
 
 const MentorsContainer = styled.div`
