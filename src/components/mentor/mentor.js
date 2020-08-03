@@ -25,6 +25,14 @@ const Info = styled.div`
   font-size: 16px;
   line-height: 16px;
 `
+const Header = styled.div`
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+`
+
+
 
 const years = {
   1: "1st",
@@ -34,10 +42,11 @@ const years = {
   5: "5th",
 }
 
-const Mentor = ({ firstName, lastName, year, major, email }) => {
+const Mentor = ({ firstName, lastName, year, major, email, skills, work }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const strYear = years[year]
+
 
   return (
     <div onClick={() => setIsOpen(prevOpen => !prevOpen)}>
@@ -51,7 +60,14 @@ const Mentor = ({ firstName, lastName, year, major, email }) => {
         <Info>{`${strYear} Year`}</Info>
         <Info>{email}</Info>
       </Layout>
-      {isOpen && <div>hidden information</div>}
+      {isOpen && <div>
+        <Layout>
+      <Header>{`Skills`}</Header>
+      <Info>{skills}</Info>
+      <Header>{`Work Experience`}</Header>
+      <Info>{work}</Info>
+          </Layout>
+        </div>}
     </div>
   )
 }
