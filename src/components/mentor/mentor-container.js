@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-
 import Mentor from "./mentor"
+import ContactBox from "./contactBox"
 
 /*
 Mentor format:
@@ -10,6 +10,8 @@ firstName
 lastName
 year
 major
+email 
+skills
 */
 
 const mentor1 = {
@@ -18,6 +20,14 @@ const mentor1 = {
   year: 2,
   major: "CS/business",
   email: "test@test.com",
+  skills: <ul>
+    <li> java</li>
+    <li>SQL</li>
+  </ul>,
+  work: <ul>
+  <li> Product management</li>
+  <li>finance internship</li>
+</ul>,
 }
 
 const mentor2 = {
@@ -34,11 +44,19 @@ const MentorsContainer = styled.div`
 `
 
 const MentorContainer = styled.div`
-  background: #d9e2ff;
+  background: #D9E2FF;
   padding: 20px;
   margin: 20px;
 
-  flex-basis: 20%;
+  flex-basis: 20%;`
+
+  
+const ContactContainer = styled.div`
+background: #A6ADD8;
+padding: 20px;
+margin 20px;
+
+flex-basis: 20%;
 `
 
 const MajorContainer = props => {
@@ -62,7 +80,10 @@ const MajorContainer = props => {
         <MentorContainer>
           <Mentor {...mentor2} />
         </MentorContainer>
-      </MentorsContainer>
+        <ContactContainer>
+          <ContactBox />
+        </ContactContainer>
+      </MentorsContainer> 
     </div>
   )
 }

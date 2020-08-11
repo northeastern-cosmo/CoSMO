@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
+
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
@@ -42,11 +43,11 @@ const years = {
   5: "5th",
 }
 
+
 const Mentor = ({ firstName, lastName, year, major, email, skills, work }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const strYear = years[year]
-
 
   return (
     <div onClick={() => setIsOpen(prevOpen => !prevOpen)}>
