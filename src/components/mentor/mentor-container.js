@@ -20,14 +20,8 @@ const mentor1 = {
   year: 2,
   major: "CS/business",
   email: "test@test.com",
-  skills: <ul>
-    <li> java</li>
-    <li>SQL</li>
-  </ul>,
-  work: <ul>
-  <li> Product management</li>
-  <li>finance internship</li>
-</ul>,
+  skills: ["java", "sql"],
+  work: ["product management", "finance"],
 }
 
 const mentor2 = {
@@ -37,20 +31,11 @@ const mentor2 = {
   major: "CS/cognitive psychology",
   email: "test@test.com",
 }
-
 const MentorsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
 
-const MentorContainer = styled.div`
-  background: #D9E2FF;
-  padding: 20px;
-  margin: 20px;
-
-  flex-basis: 20%;`
-
-  
 const ContactContainer = styled.div`
 background: #A6ADD8;
 padding: 20px;
@@ -65,25 +50,16 @@ const MajorContainer = props => {
       <div>{props.majorName}</div>
       <div>-------</div>
       <MentorsContainer>
-        <MentorContainer>
-          <Mentor {...mentor1} />
-        </MentorContainer>
-        <MentorContainer>
-          <Mentor {...mentor2} />
-        </MentorContainer>
-        <MentorContainer>
-          <Mentor {...mentor2} />
-        </MentorContainer>
-        <MentorContainer>
-          <Mentor {...mentor2} />
-        </MentorContainer>
-        <MentorContainer>
-          <Mentor {...mentor2} />
-        </MentorContainer>
+        <Mentor {...mentor1} />
+        <Mentor {...mentor2} />
+        <Mentor {...mentor2} />
+        <Mentor {...mentor2} />
+        <Mentor {...mentor2} />
+        <Mentor {...mentor2} />
         <ContactContainer>
           <ContactBox />
         </ContactContainer>
-      </MentorsContainer> 
+      </MentorsContainer>
     </div>
   )
 }
