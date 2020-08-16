@@ -30,6 +30,7 @@ const mentor2 = {
   year: 5,
   major: "CS/cognitive psychology",
   email: "test@test.com",
+  skills: ["java", "react", "javascript"]
 }
 const MentorsContainer = styled.div`
   display: flex;

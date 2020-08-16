@@ -90,8 +90,18 @@ const Mentor = ({
                   </Info>
                 </>
               ) : null}
-              <Header>{`Work Experience`}</Header>
-              <Info>{work}</Info>
+               {work.length ? (
+                <>
+                  <Header>{`Work Experience`}</Header>
+                  <Info>
+                    <ul>
+                      {work.map(workex => (
+                        <li key={workex}>{workex}</li>
+                      ))}
+                    </ul>
+                  </Info>
+                </>
+              ) : null}
             </Layout>
           </div>
         )}
