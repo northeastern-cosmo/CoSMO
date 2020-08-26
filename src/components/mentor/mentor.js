@@ -46,7 +46,11 @@ const MentorContainer = styled.div`
 
   flex-basis: 20%;
 
+<<<<<<< HEAD
   background: ${props => (props.isOpen ? "#fffff" : "#d9e2ff")};
+=======
+  background: ${props => (props.isOpen ? "#ffffff" : "#d9e2ff")};
+>>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
 `
 
 const Mentor = ({
@@ -74,6 +78,10 @@ const Mentor = ({
           </Layout>
           <Info>{`${strYear} Year`}</Info>
           <Info>{email}</Info>
+<<<<<<< HEAD
+=======
+          {!isOpen && <p>{skills.map(skill => `#${skill} `)}</p>}
+>>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
         </Layout>
         {isOpen && (
           <div>
@@ -90,7 +98,11 @@ const Mentor = ({
                   </Info>
                 </>
               ) : null}
+<<<<<<< HEAD
                {work.length ? (
+=======
+              {work.length ? (
+>>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
                 <>
                   <Header>{`Work Experience`}</Header>
                   <Info>

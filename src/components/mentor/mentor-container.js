@@ -30,11 +30,16 @@ const mentor2 = {
   year: 5,
   major: "CS/cognitive psychology",
   email: "test@test.com",
+<<<<<<< HEAD
   skills: ["java", "react", "javascript"]
+=======
+  skills: ["java", "react", "javascript"],
+>>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
 }
 const MentorsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 `
 
 const ContactContainer = styled.div`
@@ -45,11 +50,68 @@ margin 20px;
 flex-basis: 20%;
 `
 
+const SearchContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0px 3%;
+`
+
+const SearchText = styled.h5`
+  color: white;
+`
+
+const SearchBoxText = styled.div`
+  display: flex;
+  position: relative;
+`
+
+const Search = styled.input`
+  flex-grow: 1;
+  padding: 5px 15px;
+  border-radius: 30px;
+  color: #606060;
+`
+
+const SearchIcon = styled.span`
+  position: absolute;
+  top: 3px;
+  right: 15px;
+`
+
+<<<<<<< HEAD
+const ContactContainer = styled.div`
+background: #A6ADD8;
+padding: 20px;
+margin 20px;
+
+flex-basis: 20%;
+=======
+const TitleContainer = styled.h1`
+  font-size: 96px;
+  color: white;
+
+  padding: 0px 20px;
+>>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
+`
+
 const MajorContainer = props => {
   return (
     <div>
-      <div>{props.majorName}</div>
-      <div>-------</div>
+      <TitleContainer>
+        <div>Our Mentors</div>
+      </TitleContainer>
+      <SearchContainer>
+        <SearchText>
+          Search for someone by name, experience, skills, etc!
+        </SearchText>
+        <SearchBoxText>
+          <Search
+            type="text"
+            placeholder="Search for someone by name, experience, skills, etc!"
+          />
+          <SearchIcon className="material-icons">search</SearchIcon>
+        </SearchBoxText>
+      </SearchContainer>
       <MentorsContainer>
         <Mentor {...mentor1} />
         <Mentor {...mentor2} />
