@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
-import logo from '/Users/anushaarora/IdeaProjects/cosmo/src/images/ clearLogo.png';
+import logo from '../images/ clearLogo.png';
 
 const Layout = styled.div`
   display: flex;
