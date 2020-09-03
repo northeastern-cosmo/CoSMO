@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Mentor from "./mentor"
 import ContactBox from "./contactBox"
+import Footer from "../Footer"
 
 /*
 Mentor format:
@@ -30,11 +31,7 @@ const mentor2 = {
   year: 5,
   major: "CS/cognitive psychology",
   email: "test@test.com",
-<<<<<<< HEAD
-  skills: ["java", "react", "javascript"]
-=======
   skills: ["java", "react", "javascript"],
->>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
 }
 const MentorsContainer = styled.div`
   display: flex;
@@ -78,20 +75,11 @@ const SearchIcon = styled.span`
   right: 15px;
 `
 
-<<<<<<< HEAD
-const ContactContainer = styled.div`
-background: #A6ADD8;
-padding: 20px;
-margin 20px;
-
-flex-basis: 20%;
-=======
 const TitleContainer = styled.h1`
   font-size: 96px;
   color: white;
 
   padding: 0px 20px;
->>>>>>> c950a146c0fc7a66f8cb9a8dbcf41234e3b61417
 `
 
 const MajorContainer = props => {
@@ -123,6 +111,7 @@ const MajorContainer = props => {
           <ContactBox />
         </ContactContainer>
       </MentorsContainer>
+      <Footer></Footer>
     </div>
   )
 }
