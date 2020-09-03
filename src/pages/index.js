@@ -1,20 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
-import Layout from "../components/layout"
+
 import Image from "../components/image"
+import Landing from "../components/landing"
+import Values from "../components/values"
+
+const Background = styled.div`
+background: #041454;
+`
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+  <Background>
+    <Landing/>
+    <Values/>
     <Link to="/mentors/">Go to mentors page</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  </Background>
 )
 
 export default IndexPage
