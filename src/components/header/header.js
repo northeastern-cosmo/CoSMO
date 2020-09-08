@@ -5,15 +5,17 @@ import styled from "styled-components"
 import logo from "./logo.svg"
 
 const LogoContainer = styled.img`
-  height: 100px;
+  height: 105px;
   width: 105px;
+
   margin-bottom: 0;
 `
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 1400px;
-  padding: 1rem 1.0875rem;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +29,7 @@ const Links = styled.div`
 const LinkContainer = styled(Link)`
   color: #d9e2ff;
   text-decoration: none;
+
   &:not(:last-child) {
     padding-right: 49px;
   }
