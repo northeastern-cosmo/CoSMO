@@ -14,7 +14,7 @@ flex-wrap: wrap;
 const Showcase = ({props}) => {
     var items = [];
     for(var i = 0; i < props.itemProps.length; i++) {
-        items[i] = <ShowcaseItem props={props.itemProps[i]}/>
+        items[i] = <ShowcaseItem key={i} props={props.itemProps[i]}/>
     }
 
     return (

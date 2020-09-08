@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import styled from "styled-components"
-import anime from "anime"
+import anime from "animejs"
+import { useScrollState } from 'scrollmonitor-hooks';
 
 import Landing from "../components/landing"
 import Values from "../components/values"
@@ -10,6 +11,8 @@ const NUM_SECTIONS = 4;
 
 const Background = styled.div`
 background: #041454;
+position: relative;
+z-index: -2;
 `
 
 const MorphWrap = styled.div`
@@ -23,32 +26,45 @@ const MorphWrap = styled.div`
 	align-items: center;
 	justify-content: center;
   pointer-events: none;
+  z-index: -1;
 `
 
+//front is second in the array, second in the html
+const isOnPage = [];
 const IndexPage = () => {
   const [step, setStep] = useState(0);
   const [initShapeLoopStep, setShapeLoopStep] = useState(0);
   const DOM = {};
   const shapes = [
     {
-      path: "M1097.71 325.749C998.758 479.321 773.301 300.383 620.828 417.246C533.189 484.417 582.901 683.182 487.244 742.999C345.661 831.533 157.766 799.075 114.455 665.972C50.3149 468.857 246.827 454.214 315.253 370.857C417.892 245.821 141.549 21.1992 512.274 -0.79818C697.581 -11.7936 1191.95 179.503 1097.71 325.749Z",
-      pathAlt: 'M778.388 350.375C755.786 279.743 687.273 226.063 606.753 187.216C526.233 148.369 378.484 111.51 295.975 173.09C213.467 234.67 150.475 322.122 126.46 431.601C102.445 541.08 192.147 695.762 327.759 757.918C463.372 820.074 648.426 774.87 736.715 667.51C825.005 560.15 800.99 421.006 778.388 350.375Z',
-      scaleX: 1.2,
+      path: ["M796 431.133C947.361 312.834 886 116.219 1180.5 63.5C1475 10.7809 1853.5 686 1618.5 941.5C1445.28 1129.83 364 1126.87 303 851C237.12 553.064 644.638 549.432 796 431.133Z",
+        "M397.287 690.828C300.035 658.527 308.005 494.986 427.882 451.084C569.882 399.079 661.882 560.584 599.382 632.084C563.114 673.575 600.121 707.776 604.83 764.712C585.228 797.217 572.903 810.262 549.549 844.778C519.828 826.366 488.423 820.125 473.641 809.267C449.29 763.832 467.133 714.027 397.287 690.828Z"],
+      pathAlt: ["M796 431.133C947.361 312.834 886 116.219 1180.5 63.5C1475 10.7809 1853.5 686 1618.5 941.5C1445.28 1129.83 364 1126.87 303 851C237.12 553.064 644.638 549.432 796 431.133Z",
+        "M397.287 690.828C300.035 658.527 308.005 494.986 427.882 451.084C569.882 399.079 661.882 560.584 599.382 632.084C563.114 673.575 600.121 707.776 604.83 764.712C585.228 797.217 572.903 810.262 549.549 844.778C519.828 826.366 488.423 820.125 473.641 809.267C449.29 763.832 467.133 714.027 397.287 690.828Z"],
+      scaleX: 1,
       scaleY: 1,
       rotate: 0,
-      tx: -30,
-      ty: -300,
-      fill: {
-        color: '#282faf',
+      tx: 0,
+      ty: 0,
+      fill: [{
+        color: '#020A39',
         duration: 500,
         easing: 'linear'
-      },
+      }, {
+        color: '#FFE394',
+        duration: 500,
+        easing: 'linear'
+      }],
       animation: {
-        path: {
+        path: [{
           duration: 3000,
           easing: 'easeOutElastic',
           elasticity: 600
-        },
+        }, {
+          duration: 3000,
+          easing: 'easeOutElastic',
+          elasticity: 600
+        }],
         svg: {
           duration: 2000,
           easing: 'easeOutElastic'
@@ -56,24 +72,34 @@ const IndexPage = () => {
       }
     },
     {
-      path: 'M 415.6,206.3 C 407.4,286.6 438.1,373.6 496.2,454.8 554.3,536.1 497,597.2 579.7,685.7 662.4,774.1 834.3,731.7 898.5,653.4 962.3,575 967.1,486 937.7,370 909.3,253.9 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
-      pathAlt: 'M 415.6,206.3 C 407.4,286.6 415.5,381.7 473.6,462.9 531.7,544.2 482.5,637.6 579.7,685.7 676.9,733.8 826.2,710.7 890.4,632.4 954.2,554 926.8,487.6 937.7,370 948.6,252.4 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
-      scaleX: .4,
-      scaleY: 1.4,
+      path: ['M1397.39 566.375C1374.79 495.743 1306.27 442.063 1225.75 403.216C1145.23 364.369 997.484 327.51 914.975 389.09C832.467 450.67 769.475 538.122 745.46 647.601C721.445 757.08 811.147 911.762 946.759 973.918C1082.37 1036.07 1267.43 990.87 1355.72 883.51C1444 776.15 1419.99 637.006 1397.39 566.375Z',
+        'M1392.71 431.749C1293.76 585.321 1068.3 406.383 915.828 523.246C828.189 590.417 877.901 789.182 782.244 848.999C640.661 937.533 452.766 905.075 409.455 771.972C345.315 574.857 541.827 560.214 610.253 476.857C712.892 351.821 436.549 127.199 807.274 105.202C992.581 94.2064 1486.95 285.503 1392.71 431.749Z'],
+      pathAlt: ['M1397.39 566.375C1374.79 495.743 1306.27 442.063 1225.75 403.216C1145.23 364.369 997.484 327.51 914.975 389.09C832.467 450.67 769.475 538.122 745.46 647.601C721.445 757.08 811.147 911.762 946.759 973.918C1082.37 1036.07 1267.43 990.87 1355.72 883.51C1444 776.15 1419.99 637.006 1397.39 566.375Z',
+        'M1392.71 431.749C1293.76 585.321 1068.3 406.383 915.828 523.246C828.189 590.417 877.901 789.182 782.244 848.999C640.661 937.533 452.766 905.075 409.455 771.972C345.315 574.857 541.827 560.214 610.253 476.857C712.892 351.821 436.549 127.199 807.274 105.202C992.581 94.2064 1486.95 285.503 1392.71 431.749Z'],
+      scaleX: 1,
+      scaleY: 1,
       rotate: 0,
       tx: 0,
-      ty: -100,
-      fill: {
-        color: '#282faf',
+      ty: 0,
+      fill: [{
+        color: '#FFFFFF',
         duration: 500,
         easing: 'linear'
-      },
+      }, {
+        color: '#5C92D7',
+        duration: 500,
+        easing: 'linear'
+      }],
       animation: {
-        path: {
+        path: [{
           duration: 2000,
           easing: 'easeOutElastic',
           elasticity: 600
-        },
+        }, {
+          duration: 2000,
+          easing: 'easeOutElastic',
+          elasticity: 600
+        }],
         svg: {
           duration: 2000,
           easing: 'easeOutElastic'
@@ -81,24 +107,34 @@ const IndexPage = () => {
       }
     },
     {
-      path: 'M 383.8,163.4 C 335.8,352.3 591.6,317.1 608.7,420.8 625.8,524.5 580.5,626 647.3,688 714,750 837.1,760.5 940.9,661.5 1044,562.3 1041,455.8 975.8,393.6 909.8,331.5 854.2,365.4 784.4,328.1 714.6,290.8 771.9,245.2 733.1,132.4 694.2,19.52 431.9,-25.48 383.8,163.4 Z',
-      pathAlt: 'M 383.8,163.4 C 345.5,324.9 591.6,317.1 608.7,420.8 625.8,524.5 595.1,597 647.3,688 699.5,779 837.1,760.5 940.9,661.5 1044,562.3 1068,444.4 975.8,393.6 884,342.8 854.2,365.4 784.4,328.1 714.6,290.8 820.3,237.2 733.1,132.4 645.9,27.62 422.1,1.919 383.8,163.4 Z',
-      scaleX: .7,
-      scaleY: 1.1,
-      rotate: -20,
-      tx: 200,
-      ty: 200,
-      fill: {
-        color: '#282faf',
+      path: ['M1256.97 220.643C1113.97 165.643 933.971 275.643 872.971 344.643C698.971 526.143 848.823 712.861 975.295 826.249C1120.29 956.249 1598.47 993.643 1743.47 951.643C1888.47 909.643 1935.97 476.643 1846.47 354.143C1756.97 231.643 1541.47 426.643 1411.47 430.643C1281.47 434.643 1399.97 275.643 1256.97 220.643Z',
+        "M845.295 258.249C768.703 98.7489 483.295 -12.7511 228.795 65.7489C-25.7051 144.249 -137.205 372.249 -75.2051 632.749C-13.2051 893.249 263.795 1018.75 580.295 1051.25C896.795 1083.75 1354.29 1013.25 1461.79 949.249C1569.29 885.249 1614.79 785.749 1478.29 632.749C1341.79 479.749 1170.79 642.358 1066.29 612.249C912.295 567.877 921.886 417.749 845.295 258.249Z"],
+      pathAlt: ['M1256.97 220.643C1113.97 165.643 933.971 275.643 872.971 344.643C698.971 526.143 848.823 712.861 975.295 826.249C1120.29 956.249 1598.47 993.643 1743.47 951.643C1888.47 909.643 1935.97 476.643 1846.47 354.143C1756.97 231.643 1541.47 426.643 1411.47 430.643C1281.47 434.643 1399.97 275.643 1256.97 220.643Z',
+        "M845.295 258.249C768.703 98.7489 483.295 -12.7511 228.795 65.7489C-25.7051 144.249 -137.205 372.249 -75.2051 632.749C-13.2051 893.249 263.795 1018.75 580.295 1051.25C896.795 1083.75 1354.29 1013.25 1461.79 949.249C1569.29 885.249 1614.79 785.749 1478.29 632.749C1341.79 479.749 1170.79 642.358 1066.29 612.249C912.295 567.877 921.886 417.749 845.295 258.249Z"],
+      scaleX: 1,
+      scaleY: 1,
+      rotate: 0,
+      tx: 0,
+      ty: 0,
+      fill: [{
+        color: '#1C2E74',
         duration: 500,
         easing: 'linear'
-      },
+      }, {
+        color: '#FFE394',
+        duration: 500,
+        easing: 'linear'
+      }],
       animation: {
-        path: {
+        path: [{
           duration: 3000,
           easing: 'easeOutElastic',
           elasticity: 600
-        },
+        }, {
+          duration: 3000,
+          easing: 'easeOutElastic',
+          elasticity: 600
+        }],
         svg: {
           duration: 2500,
           easing: 'easeOutElastic'
@@ -183,10 +219,14 @@ const IndexPage = () => {
     }
   ];
   DOM.svg = document.querySelector('.morph');
-  DOM.shapeEl = DOM.svg.querySelector('path');
+  DOM.frontShapeEl = DOM.svg?.querySelector('.front-path');
+  DOM.backShapeEl = DOM.svg?.querySelector('.back-path');
 
   // initShapeEl
   useEffect(() => {
+    DOM.svg = document.querySelector('.morph');
+    DOM.frontShapeEl = DOM.svg?.querySelector('.front-path');
+    DOM.backShapeEl = DOM.svg?.querySelector('.back-path');
     anime.remove(DOM.svg);
     anime({
       targets: DOM.svg,
@@ -198,19 +238,33 @@ const IndexPage = () => {
       translateY: shapes[0].ty + 'px',
       rotate: shapes[0].rotate + 'deg'
     });
+
   }, []);
   // initShapeLoop
   useEffect(() => {
-    anime.remove(DOM.shapeEl);
+    anime.remove(DOM.frontShapeEl);
+    anime.remove(DOM.backShapeEl);
     anime({
-      targets: DOM.shapeEl,
+      targets: DOM.frontShapeEl,
       easing: 'linear',
-      d: [{ value: shapes[initShapeLoopStep].pathAlt, duration: 3500 }, { value: shapes[initShapeLoopStep].path, duration: 3500 }],
+      d: [{ value: shapes[initShapeLoopStep].pathAlt[0], duration: 3500 }, { value: shapes[initShapeLoopStep].path[0], duration: 3500 }],
       loop: true,
       fill: {
-        value: shapes[initShapeLoopStep].fill.color,
-        duration: shapes[initShapeLoopStep].fill.duration,
-        easing: shapes[initShapeLoopStep].fill.easing
+        value: shapes[initShapeLoopStep].fill[0].color,
+        duration: shapes[initShapeLoopStep].fill[0].duration,
+        easing: shapes[initShapeLoopStep].fill[0].easing
+      },
+      direction: 'alternate'
+    });
+    anime({
+      targets: DOM.backShapeEl,
+      easing: 'linear',
+      d: [{ value: shapes[initShapeLoopStep].pathAlt[1], duration: 3500 }, { value: shapes[initShapeLoopStep].path[1], duration: 3500 }],
+      loop: true,
+      fill: {
+        value: shapes[initShapeLoopStep].fill[1].color,
+        duration: shapes[initShapeLoopStep].fill[1].duration,
+        easing: shapes[initShapeLoopStep].fill[1].easing
       },
       direction: 'alternate'
     });
@@ -218,17 +272,33 @@ const IndexPage = () => {
 
   // On step change
   useEffect(() => {
-    anime.remove(DOM.shapeEl);
+    anime.remove(DOM.frontShapeEl);
+    anime.remove(DOM.backShapeEl);
     anime({
-      targets: DOM.shapeEl,
-      duration: shapes[step].animation.path.duration,
-      easing: shapes[step].animation.path.easing,
-      elasticity: shapes[step].animation.path.elasticity || 0,
-      d: shapes[step].path,
+      targets: DOM.frontShapeEl,
+      duration: shapes[step].animation.path[0].duration,
+      easing: shapes[step].animation.path[0].easing,
+      elasticity: shapes[step].animation.path[0].elasticity || 0,
+      d: shapes[step].path[0],
       fill: {
-        value: shapes[step].fill.color,
-        duration: shapes[step].fill.duration,
-        easing: shapes[step].fill.easing
+        value: shapes[step].fill[0].color,
+        duration: shapes[step].fill[0].duration,
+        easing: shapes[step].fill[0].easing
+      },
+      complete: function () {
+        setShapeLoopStep(step);
+      }
+    });
+    anime({
+      targets: DOM.backShapeEl,
+      duration: shapes[step].animation.path[1].duration,
+      easing: shapes[step].animation.path[1].easing,
+      elasticity: shapes[step].animation.path[1].elasticity || 0,
+      d: shapes[step].path[1],
+      fill: {
+        value: shapes[step].fill[1].color,
+        duration: shapes[step].fill[1].duration,
+        easing: shapes[step].fill[1].easing
       },
       complete: function () {
         setShapeLoopStep(step);
@@ -249,15 +319,24 @@ const IndexPage = () => {
     });
   }, [step]);
 
+  // Scroll monitor callbacks for section idx
   const getCallbacks = (idx) => {
     return {
-      enterViewport: (watcher) => {
-        setStep(idx);
+      fullyEnterViewport: () => {
+        if (!isOnPage[idx]) {
+          isOnPage[idx] = true;
+          console.log(idx + "enters");
+          setStep(idx);
+        }
       },
       exitViewport: (watcher) => {
-        const pos = !watcher.isAboveViewport ? idx - 1 : idx + 1;
-        if (pos <= NUM_SECTIONS && step !== pos) {
-          setStep(pos);
+        if (isOnPage[idx]) {
+          isOnPage[idx] = false;
+          const pos = !watcher.isAboveViewport ? idx - 1 : idx + 1;
+          if (pos <= NUM_SECTIONS && step !== pos) {
+            console.log("exit to " + pos);
+            setStep(pos);
+          }
         }
       }
     }
@@ -266,7 +345,7 @@ const IndexPage = () => {
   return (
     <Background>
       <MorphWrap className="morph-wrap">
-        <AnimatedSVG path={this.shapes[0].pathAlt} />
+        <AnimatedSVG frontPath={shapes[0].pathAlt[0]} backPath={shapes[0].pathAlt[1]} />
       </MorphWrap>
       <Landing callbacks={getCallbacks(0)} />
       <Values callbacks={getCallbacks(1)} />

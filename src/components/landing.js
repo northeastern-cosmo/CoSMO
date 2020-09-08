@@ -1,6 +1,7 @@
-import React from 'react';
 import styled from "styled-components";
 import SectionContainer from "./section-container";
+import { useScrollMonitor } from 'scrollmonitor-hooks';
+import React, { useRef } from "react"
 
 const TitleContainer = styled.div`
 padding: 245px 100px 0px 100px;
@@ -61,13 +62,14 @@ overflow: hidden;
 
 */
 
-const Landing = ({ callbacks }) => {
+const Landing = ({callbacks}) => {
+    const ref = useRef(null);
+    useScrollMonitor(ref, callbacks);
     return (
-
         <SectionContainer callbacks={callbacks}>
             <TitleContainer>
                 <University>Northeastern University</University>
-                <Name>Computer Science Mentoring Organization</Name>
+                <Name ref={ref}>Computer Science Mentoring Organization</Name>
                 <InfoContainer>
                     <InfoSection>Northeastern's Computer Science Mentoring Organization serves to better connect Northeastern students who are interested in computer science.</InfoSection>
                     <InfoSection>We run a mentorship program every semester where undergraduates who are interested in computer science can get the help they need with classes, co-ops, and more.</InfoSection>
