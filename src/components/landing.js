@@ -61,21 +61,20 @@ overflow: hidden;
 
 */
 
-const Landing = () => {
-    return(
-        <>
-            <SectionContainer>
-                <TitleContainer>
-                    <University>Northeastern University</University>
-                    <Name>Computer Science Mentoring Organization</Name>
-                    <InfoContainer>
-                        <InfoSection>Northeastern's Computer Science Mentoring Organization serves to better connect Northeastern students who are interested in computer science.</InfoSection>
-                        <InfoSection>We run a mentorship program every semester where undergraduates who are interested in computer science can get the help they need with classes, co-ops, and more.</InfoSection>
-                        <InfoSection>CoSMO is open to all. No prior CS experience required!</InfoSection>
-                    </InfoContainer>
-                </TitleContainer>
-            </SectionContainer>
-        </>
+const Landing = ({ callbacks }) => {
+    return (
+
+        <SectionContainer callbacks={callbacks}>
+            <TitleContainer>
+                <University>Northeastern University</University>
+                <Name>Computer Science Mentoring Organization</Name>
+                <InfoContainer>
+                    <InfoSection>Northeastern's Computer Science Mentoring Organization serves to better connect Northeastern students who are interested in computer science.</InfoSection>
+                    <InfoSection>We run a mentorship program every semester where undergraduates who are interested in computer science can get the help they need with classes, co-ops, and more.</InfoSection>
+                    <InfoSection>CoSMO is open to all. No prior CS experience required!</InfoSection>
+                </InfoContainer>
+            </TitleContainer>
+        </SectionContainer>
     )
 }
 

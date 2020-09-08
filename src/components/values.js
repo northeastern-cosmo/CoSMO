@@ -36,9 +36,9 @@ const valuesSectionShowcaseProps = {
     ]
 }
 
-const Values = () => {
+const Values = ({callbacks}) => {
     return (
-        <SectionContainer>
+        <SectionContainer callbacks={callbacks}>
             <Title>
                 Our goals... idk what to put here lol but this is space we can put more info
                 </Title>
