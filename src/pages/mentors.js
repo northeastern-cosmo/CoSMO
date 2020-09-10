@@ -92,7 +92,7 @@ const MentorsPage = ({ hasStarted = false }) => {
             </MentorsContainer>
           </>
         ) : (
-          <TempMessage />
+          <TempMessage semester="Fall 2020" />
         )}
       </MentorPage>
     </Layout>

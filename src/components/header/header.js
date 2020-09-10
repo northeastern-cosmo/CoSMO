@@ -19,6 +19,10 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 const Links = styled.div`

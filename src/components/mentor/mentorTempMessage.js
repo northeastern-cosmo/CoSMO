@@ -10,11 +10,12 @@ const TempMessage = ({ semester }) => {
   return (
     <TempContainer>
       <p>
-        Our mentorship program hasn't kicked off yet for this semester! Check
-        back later in the semester for a list of our mentors.
+        Our mentorship program hasn't kicked off yet for
+        {semester ? ` the ${semester} semester` : " this semester"}! Check back
+        later to learn more about the mentors.
       </p>
       <p>Interested in being a mentor?</p>
-      <p>Contact us at nucsmo@gmail.com to find out how to get involved</p>
+      <p>Contact us at nucsmo@gmail.com to find out how to get involved.</p>
     </TempContainer>
   )
 }
