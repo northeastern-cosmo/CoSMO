@@ -13,8 +13,7 @@ const Link = styled.a`
 const IconContainer = styled.div`
   position: fixed;
   right: auto;
-  padding-right: 15px;
-  bottom: 40px;
+  bottom: 10px;
 
   @media (max-width: 480px) {
     bottom: 0px;

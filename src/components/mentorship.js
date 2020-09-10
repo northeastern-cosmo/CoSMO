@@ -3,6 +3,10 @@ import SectionContainer from "./section-container"
 import { useScrollMonitor } from "scrollmonitor-hooks"
 import React, { useRef } from "react"
 
+// FALL 2020 SIGN UP FORM LINKS
+const mentorFormURL = "https://forms.gle/mSW8FLArBCzpqeAq8"
+const menteeFormURL = "https://forms.gle/k4LWyKxYKR94pMUN8"
+
 const TitleContainer = styled.div`
   padding: 100px 100px 0px 100px;
   display: flex;
@@ -45,6 +49,23 @@ const InfoContainer = styled.div`
   height: 100%;
   width: 100%;
 `
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  flex-wrap: wrap;
+`
+const Button = styled.a`
+  text-decoration: none;
+  background-color: #041454;
+  color: white;
+
+  padding: 10px;
+  border-radius: 15px;
+
+  cursor: pointer;
+`
 
 const Mentorship = ({ callbacks }) => {
   const ref = useRef(null)
@@ -55,12 +76,11 @@ const Mentorship = ({ callbacks }) => {
         <Name>Rooted in Mentorship</Name>
         <InfoContainer>
           <InfoSection ref={ref}>
-            We're building a supportive community in the computer science
-            discipline and providing resources to help guide students interested
-            in Computer Science. CoSMO’s mentorship program creates an
-            additional layer of support for students entering Northeastern and
-            exploring Computer Science. Beyond the larger CoSMO community, the
-            mentorship program allows students new to Computer Science to
+            We're providing resources to help guide students interested in
+            Computer Science through our mentorship program. Our program creates
+            an additional layer of support for students entering Northeastern
+            and exploring Computer Science. Beyond the larger CoSMO community,
+            the mentorship program allows students new to Computer Science to
             connect with an older Khoury student on a more personal level.
             One-on-one mentorship relationships are great opportunities, whether
             you have specific questions regarding co-op, adapting to life as a
@@ -68,13 +88,23 @@ const Mentorship = ({ callbacks }) => {
           </InfoSection>
           <InfoSection>
             The mentorship program runs during both the fall and spring
-            semesters. Sign-ups are currently open for mentors and mentees. No
-            experience is necessary to join the program, and everyone who signs
-            up will be paired with a mentor.
+            semesters. Sign-ups are currently open for
+            <a href={mentorFormURL}> mentors</a> and
+            <a href={menteeFormURL}> mentees</a>. No experience is necessary to
+            join the program, and everyone who signs up will be paired with a
+            mentor.
           </InfoSection>
           <InfoSection>
             Check out our mentorship FAQ or contact us for more information!
           </InfoSection>
+          <ButtonContainer>
+            <Button role="button" href={mentorFormURL}>
+              Sign up to be a MENTOR
+            </Button>
+            <Button role="button" href={menteeFormURL}>
+              Sign up to be a MENTEE
+            </Button>
+          </ButtonContainer>
         </InfoContainer>
       </TitleContainer>
     </SectionContainer>

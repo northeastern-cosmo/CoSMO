@@ -44,18 +44,15 @@ const Footer = () => {
       <FooterContainer>
         <Layout justify="space-between">
           <Layout>
-            <LogoContainer src={logo} alt="cosmo logo" height="90" width="90" />
-            <Layout
-              direction="column"
-              justify="center"
-              style={{ marginLeft: "15px" }}
-            >
+            <Layout direction="column" justify="center">
               <Title>Northeastern University</Title>
               <Cosmo>Computer Science Mentoring Organization</Cosmo>
             </Layout>
           </Layout>
-          <Layout>
-            <Title>Follow us on social media!</Title>
+          <Layout justify="flex-end">
+            <Title style={{ marginTop: "-7px" }}>
+              Follow us on social media!
+            </Title>
             <SocialMedia />
           </Layout>
         </Layout>

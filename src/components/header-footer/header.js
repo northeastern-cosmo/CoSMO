@@ -19,7 +19,6 @@ export const LogoContainer = styled.img`
 const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 1400px;
-  padding: 1.25rem 0;
 
   display: flex;
   justify-content: space-between;
