@@ -4,6 +4,7 @@ import Showcase from "./showcase"
 import community from "../images/community.svg"
 import collaboration from "../images/collaboration.svg"
 import mentorship from "../images/mentorship.svg"
+import logo from "./header-footer/logo.svg"
 import { useScrollMonitor } from "scrollmonitor-hooks"
 import React, { useRef } from "react"
 
@@ -39,9 +40,7 @@ const Values = ({ callbacks }) => {
   useScrollMonitor(ref, callbacks)
   return (
     <SectionContainer>
-      <Title>
-        Our Pillars?? idk what to put here
-      </Title>
+      <Title>Our Pillars?? idk what to put here</Title>
       <Showcase ref={ref} props={valuesSectionShowcaseProps} />
     </SectionContainer>
   )
