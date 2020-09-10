@@ -11,17 +11,17 @@ margin: auto;
 flex-wrap: wrap;
 `
 
-const Showcase = ({props}) => {
+const Showcase = React.forwardRef(({props}, ref) => {
     var items = [];
     for(var i = 0; i < props.itemProps.length; i++) {
         items[i] = <ShowcaseItem key={i} props={props.itemProps[i]}/>
     }
 
     return (
-        <ShowcaseContainer>
+        <ShowcaseContainer ref={ref}>
             {items}
         </ShowcaseContainer>
     )
-}
+});
 
 export default Showcase;

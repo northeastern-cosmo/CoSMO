@@ -4,7 +4,7 @@ import { useScrollMonitor } from 'scrollmonitor-hooks';
 import React, { useRef } from "react"
 
 const TitleContainer = styled.div`
-padding: 245px 100px 0px 100px;
+padding: 100px 100px 0px 100px;
 `
 const University = styled.p`
 font-family: Nunito Sans;
@@ -23,6 +23,7 @@ font-weight: bold;
 font-size: 48px;
 line-height: 65px;
 color: #FFFFFF;
+margin-bottom: 100px;
 `
 const InfoSection = styled.div`
 max-width: 600px;
@@ -44,23 +45,6 @@ position: relative;
 height: 100%;
 width: 100%;
 `
-
-/*
-
-const Background = styled.div`
-position: relative;
-width: 100%;
-height: auto;
-overflow: hidden;
-`
-
-<Background>
-    <svg width="1440" height="852" viewBox="0 0 1440 852" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M563 518.5C383 563.5 -2.5 622 -2.5 853.5H1441V0.5H959.5C956.333 158.167 827.591 452.352 563 518.5Z" fill="#A6ADD8"/>
-    </svg>
-</Background>
-
-*/
 
 const Landing = ({callbacks}) => {
     const ref = useRef(null);

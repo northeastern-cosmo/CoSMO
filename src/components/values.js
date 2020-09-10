@@ -14,7 +14,7 @@ line-height: 65px;
 padding-top: 80px;
 padding-left: 100px;
 padding-right: 100px;
-max-width: 1050px;
+max-width: 1100px;
 color: white;
 `
 const valuesSectionShowcaseProps = {
@@ -39,10 +39,10 @@ const Values = ({callbacks}) => {
     useScrollMonitor(ref, callbacks);
     return (
         <SectionContainer>
-            <Title ref={ref}>
+            <Title>
                 Our goals... idk what to put here lol but this is space we can put more info
                 </Title>
-            <Showcase props={valuesSectionShowcaseProps}/>
+            <Showcase ref={ref} props={valuesSectionShowcaseProps}/>
         </SectionContainer>
     )
 }
