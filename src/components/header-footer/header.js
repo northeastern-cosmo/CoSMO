@@ -6,9 +6,14 @@ import logo from "./logo.svg"
 
 export const LogoContainer = styled.img`
   height: ${({ height = 105 }) => `${height}px`};
-  height: ${({ width = 105 }) => `${width}px`}};
+  width: ${({ width = 105 }) => `${width}px`}};
 
   margin-bottom: 0;
+
+  @media (max-width: 480px) {
+    height: ${({ height = 105 }) => `${height * 0.7}px`};
+  width: ${({ width = 105 }) => `${width * 0.7}px`}};
+  }
 `
 
 const HeaderContainer = styled.div`

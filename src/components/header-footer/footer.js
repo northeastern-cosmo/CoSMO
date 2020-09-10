@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import logo from "./logo.svg"
 
 import { LogoContainer } from "./header"
@@ -14,6 +14,12 @@ const FooterContainer = styled.div`
 const Layout = styled.div`
   display: flex;
   flex-direction: ${({ direction = "row" }) => direction};
+
+  ${props =>
+    props.justify &&
+    css`
+      justify-content: ${props.justify};
+    `}
 `
 
 const Title = styled.div`
@@ -36,20 +42,17 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: "#020a39", flexShrink: 0 }}>
       <FooterContainer>
-        <Layout style={{ justifyContent: "space-between" }}>
+        <Layout justify="space-between">
           <Layout>
-            <div>
-              <LogoContainer
-                src={logo}
-                alt="cosmo logo"
-                height="90"
-                width="90"
-              />
-            </div>
-            <div>
+            <LogoContainer src={logo} alt="cosmo logo" height="90" width="90" />
+            <Layout
+              direction="column"
+              justify="center"
+              style={{ marginLeft: "15px" }}
+            >
               <Title>Northeastern University</Title>
               <Cosmo>Computer Science Mentoring Organization</Cosmo>
-            </div>
+            </Layout>
           </Layout>
           <Layout>
             <Title>Follow us on social media!</Title>

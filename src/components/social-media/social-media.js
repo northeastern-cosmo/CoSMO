@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import useWindowDimensions from "../../hooks/useWindowDimensions"
 
 import { LogoContainer } from "../header-footer/header"
 import { icons } from "./icons/index"
@@ -15,7 +14,12 @@ const IconContainer = styled.div`
   position: fixed;
   right: auto;
   padding-right: 15px;
-  bottom: 50px;
+  bottom: 40px;
+
+  @media (max-width: 480px) {
+    bottom: 0px;
+    padding-right: 0px;
+  }
 `
 
 const SocialMedia = () => {

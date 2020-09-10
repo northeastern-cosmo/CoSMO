@@ -20,7 +20,6 @@ const Container = styled.div`
 `
 
 const Layout = ({ children, page }) => {
-  console.log(page)
   return (
     <Container page={page}>
       <Header />
