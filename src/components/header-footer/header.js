@@ -4,9 +4,9 @@ import React from "react"
 import styled from "styled-components"
 import logo from "./logo.svg"
 
-const LogoContainer = styled.img`
-  height: 105px;
-  width: 105px;
+export const LogoContainer = styled.img`
+  height: ${({ height = 105 }) => `${height}px`};
+  height: ${({ width = 105 }) => `${width}px`}};
 
   margin-bottom: 0;
 `
@@ -49,7 +49,7 @@ const Header = () => (
   >
     <HeaderContainer>
       <Link to="/">
-        <LogoContainer src={logo} />
+        <LogoContainer src={logo} alt="cosmo logo" width="105" height="105" />
       </Link>
       <Links>
         <LinkContainer to="/">about</LinkContainer>

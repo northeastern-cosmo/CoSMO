@@ -413,6 +413,8 @@ const IndexPage = () => {
     }
   }
 
+  // need the body class name to change the body background color on this
+  // page only since we have a maxw-width and the margins would be the wrong color
   return (
     <>
       <Helmet>
