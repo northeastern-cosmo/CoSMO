@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Mentor from "./mentor"
 import ContactBox from "./contactBox"
+import Footer from "../Footer"
 
 /*
 Mentor format:
@@ -110,6 +111,7 @@ const MajorContainer = props => {
           <ContactBox />
         </ContactContainer>
       </MentorsContainer>
+      <Footer></Footer>
     </div>
   )
 }

@@ -75,6 +75,7 @@ const Mentor = ({
           <Info>{`${strYear} Year`}</Info>
           <Info>{email}</Info>
           {!isOpen && <p>{skills.map(skill => `#${skill} `)}</p>}
+
         </Layout>
         {isOpen && (
           <div>
