@@ -39,7 +39,7 @@ const Values = ({ callbacks }) => {
   useScrollMonitor(ref, callbacks)
   return (
     <SectionContainer>
-      <Title>Core Values of CoSMO</Title>
+      <Title>Our Values</Title>
       <Showcase ref={ref} props={valuesSectionShowcaseProps} />
     </SectionContainer>
   )

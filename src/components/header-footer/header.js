@@ -8,11 +8,13 @@ export const LogoContainer = styled.img`
   height: ${({ height = 105 }) => `${height}px`};
   width: ${({ width = 105 }) => `${width}px`}};
 
-  margin-bottom: 0;
+  margin-bottom: ${({ bottom = 0 }) => bottom + "px"};
+  margin-top: ${({ top = 0 }) => top + "px"};
+  margin-left: ${({ left = 0 }) => left + "px"};
 
   @media (max-width: 480px) {
     height: ${({ height = 105 }) => `${height * 0.7}px`};
-  width: ${({ width = 105 }) => `${width * 0.7}px`}};
+    width: ${({ width = 105 }) => `${width * 0.7}px`}};
   }
 `
 
@@ -43,26 +45,40 @@ const LinkContainer = styled(Link)`
   }
 `
 
-const Header = () => (
-  <header
-    style={{
-      background: `#020a39`,
-      position: "sticky",
-      top: 0,
-    }}
-  >
-    <HeaderContainer>
-      <Link to="/">
-        <LogoContainer src={logo} alt="cosmo logo" width="90" height="90" />
-      </Link>
-      <Links>
-        <LinkContainer to="/">about</LinkContainer>
-        <LinkContainer to="/mentors">mentors</LinkContainer>
-        <LinkContainer to="/">news</LinkContainer>
-        <LinkContainer to="/">team</LinkContainer>
-      </Links>
-    </HeaderContainer>
-  </header>
-)
+const Header = () => {
+  const logoMargins = {
+    bottom: 10,
+    top: 10,
+    left: 10,
+  }
+
+  return (
+    <header
+      style={{
+        background: `#020a39`,
+        position: "sticky",
+        top: 0,
+        zIndex: 5,
+      }}
+    >
+      <HeaderContainer>
+        <Link to="/">
+          <LogoContainer
+            src={logo}
+            alt="cosmo logo"
+            width="90"
+            height="90"
+            {...logoMargins}
+          />
+        </Link>
+        <Links>
+          <LinkContainer to="/mentors">mentors</LinkContainer>
+          {/* {<LinkContainer to="/">news</LinkContainer>} */}
+          <LinkContainer to="/">team</LinkContainer>
+        </Links>
+      </HeaderContainer>
+    </header>
+  )
+}
 
 export default Header

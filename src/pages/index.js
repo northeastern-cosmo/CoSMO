@@ -16,7 +16,7 @@ const NUM_SECTIONS = 5
 const Background = styled.div`
   background: #041454;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 `
 
 const MorphWrap = styled.div`
@@ -30,7 +30,7 @@ const MorphWrap = styled.div`
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: -1;
+  z-index: 2;
 `
 
 //front is second in the array, second in the html
@@ -397,6 +397,13 @@ const IndexPage = () => {
   });
   */
 
+  useEffect(() => {
+    window.addEventListener("click", function (event) {
+      console.log(event)
+    })
+
+    return window.removeEventListener("click", () => {})
+  }, [])
   // On step change
   useEffect(() => {
     anime.remove(DOM.frontShapeEl)
@@ -464,7 +471,6 @@ const IndexPage = () => {
       },
     }
   }
-
   // need the body class name to change the body background color on this
   // page only since we have a maxw-width and the margins would be the wrong color
   return (

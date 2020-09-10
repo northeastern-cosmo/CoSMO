@@ -33,13 +33,14 @@ const InfoSection = styled.div`
   max-width: 700px;
   font-family: Nunito Sans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 22px;
   line-height: 33px;
   text-align: left;
   color: black;
   text-wrap: pre;
   margin-bottom: 30px;
+  color: #041454;
 `
 const InfoContainer = styled.div`
   display: flex;
@@ -51,18 +52,28 @@ const InfoContainer = styled.div`
 `
 const ButtonContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  max-width: 500px;
 
   flex-wrap: wrap;
+  margin: 26px auto;
+`
+
+const Link = styled.a`
+  text-decoration: none;
+  font-weight: bold;
+  color: #5c92d7;
 `
 const Button = styled.a`
   text-decoration: none;
   background-color: #041454;
   color: white;
 
-  padding: 10px;
-  border-radius: 15px;
+  font-size: 1.25rem;
+
+  padding: 20px 40px;
+  border-radius: 10px;
 
   cursor: pointer;
 `
@@ -89,23 +100,23 @@ const Mentorship = ({ callbacks }) => {
           <InfoSection>
             The mentorship program runs during both the fall and spring
             semesters. Sign-ups are currently open for
-            <a href={mentorFormURL}> mentors</a> and
-            <a href={menteeFormURL}> mentees</a>. No experience is necessary to
-            join the program, and everyone who signs up will be paired with a
-            mentor.
+            <Link href={mentorFormURL}> mentors</Link> and
+            <Link href={menteeFormURL}> mentees</Link>. No experience is
+            necessary to join the program, and everyone who signs up will be
+            paired with a mentor.
           </InfoSection>
           <InfoSection>
             Check out our mentorship FAQ or contact us for more information!
           </InfoSection>
-          <ButtonContainer>
-            <Button role="button" href={mentorFormURL}>
-              Sign up to be a MENTOR
-            </Button>
-            <Button role="button" href={menteeFormURL}>
-              Sign up to be a MENTEE
-            </Button>
-          </ButtonContainer>
         </InfoContainer>
+        <ButtonContainer>
+          <Button role="link" href={mentorFormURL}>
+            Mentor Signup
+          </Button>
+          <Button role="link" href={menteeFormURL}>
+            Mentee Signup
+          </Button>
+        </ButtonContainer>
       </TitleContainer>
     </SectionContainer>
   )

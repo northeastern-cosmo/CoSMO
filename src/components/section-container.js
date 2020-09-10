@@ -6,6 +6,8 @@ const SectionContainerBase = styled.div`
   min-height: 900px;
   max-width: 1600px;
   margin: auto;
+  z-index: 3;
+  position: relative;
 `
 
 const SectionContainer = ({ children }) => {

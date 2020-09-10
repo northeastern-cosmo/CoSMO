@@ -40,7 +40,7 @@ const Cosmo = styled.div`
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#020a39", flexShrink: 0 }}>
+    <footer style={{ backgroundColor: "#020a39", flexShrink: 0, zIndex: 5 }}>
       <FooterContainer>
         <Layout justify="space-between">
           <Layout>

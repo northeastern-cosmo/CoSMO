@@ -33,7 +33,7 @@ module.exports = {
         fonts: [
           {
             family: `Nunito Sans`,
-            variants: [`400`, `700`],
+            variants: [`400`, `600`, `700`],
           },
         ],
       },
