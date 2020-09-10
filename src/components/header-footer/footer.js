@@ -34,7 +34,7 @@ const Cosmo = styled.div`
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#020a39" }}>
+    <footer style={{ backgroundColor: "#020a39", flexShrink: 0 }}>
       <FooterContainer>
         <Layout style={{ justifyContent: "space-between" }}>
           <Layout>
@@ -51,11 +51,9 @@ const Footer = () => {
               <Cosmo>Computer Science Mentoring Organization</Cosmo>
             </div>
           </Layout>
-          <Layout direction="column">
+          <Layout>
             <Title>Follow us on social media!</Title>
-            <div className="container">
-              <SocialMedia />
-            </div>
+            <SocialMedia />
           </Layout>
         </Layout>
       </FooterContainer>
