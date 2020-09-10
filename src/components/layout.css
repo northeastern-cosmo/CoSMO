@@ -201,6 +201,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: #020a39;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: "Nunito Sans", serif;
   font-weight: normal;
@@ -210,7 +211,14 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  position: relative;
+  z-index: -100;
 }
+
+body.homepage {
+  background-color: #041454;
+}
+
 img {
   max-width: 100%;
   margin-left: 0;

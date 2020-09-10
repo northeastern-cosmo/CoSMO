@@ -11,9 +11,9 @@ const LogoContainer = styled.img`
   margin-bottom: 0;
 `
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1400px;
   padding: 1.45rem 1.0875rem;
 
   display: flex;
@@ -43,6 +43,8 @@ const Header = () => (
   <header
     style={{
       background: `#020a39`,
+      position: "sticky",
+      top: 0,
     }}
   >
     <HeaderContainer>
