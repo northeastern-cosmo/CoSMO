@@ -48,7 +48,7 @@ const SearchIcon = styled.span`
   right: 15px;
 `
 
-const TitleContainer = styled.h1`
+export const TitleContainer = styled.h1`
   font-size: calc(48px + (96 - 24) * ((100vw - 320px) / (1600 - 320)));
   color: white;
   font-family: "Nunito Sans";

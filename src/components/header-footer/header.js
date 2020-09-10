@@ -74,7 +74,7 @@ const Header = () => {
         <Links>
           <LinkContainer to="/mentors">mentors</LinkContainer>
           {/* {<LinkContainer to="/">news</LinkContainer>} */}
-          <LinkContainer to="/">team</LinkContainer>
+          <LinkContainer to="/team">team</LinkContainer>
         </Links>
       </HeaderContainer>
     </header>
