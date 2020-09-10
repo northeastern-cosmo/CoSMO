@@ -3,7 +3,7 @@ import styled from "styled-components"
 import logo from "./logo.svg"
 
 import { LogoContainer } from "./header"
-import SocialMedia from "../social-media"
+import SocialMedia from "../social-media/social-media"
 
 const FooterContainer = styled.div`
   margin: 0 auto;
@@ -13,7 +13,7 @@ const FooterContainer = styled.div`
 
 const Layout = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({ direction = "row" }) => direction};
 `
 
 const Title = styled.div`
@@ -51,13 +51,13 @@ const Footer = () => {
               <Cosmo>Computer Science Mentoring Organization</Cosmo>
             </div>
           </Layout>
-          <Layout>
+          <Layout direction="column">
             <Title>Follow us on social media!</Title>
+            <div className="container">
+              <SocialMedia />
+            </div>
           </Layout>
         </Layout>
-        <div className="container">
-          <SocialMedia />
-        </div>
       </FooterContainer>
     </footer>
   )
