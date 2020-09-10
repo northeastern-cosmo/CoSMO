@@ -472,7 +472,7 @@ const IndexPage = () => {
       <Helmet>
         <body class="homepage" />
       </Helmet>
-      <Layout>
+      <Layout page="homepage">
         <Background>
           <MorphWrap className="morph-wrap">
             <AnimatedSVG

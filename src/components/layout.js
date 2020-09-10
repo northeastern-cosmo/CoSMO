@@ -16,12 +16,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
+  height: ${({ page = "other" }) => (page === "homepage" ? "100%" : "100vh")};
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, page }) => {
+  console.log(page)
   return (
-    <Container>
+    <Container page={page}>
       <Header />
       <div
         style={{
