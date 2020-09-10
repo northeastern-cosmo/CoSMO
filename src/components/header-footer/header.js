@@ -34,6 +34,7 @@ const HeaderContainer = styled.div`
 const Links = styled.div`
   display: flex;
   align-items: baseline;
+  padding-right: 10px;
 `
 
 const LinkContainer = styled(Link)`
@@ -73,7 +74,7 @@ const Header = () => {
         </Link>
         <Links>
           <LinkContainer to="/mentors">mentors</LinkContainer>
-          {/* {<LinkContainer to="/">news</LinkContainer>} */}
+          <LinkContainer to="/news">news</LinkContainer>
           <LinkContainer to="/team">team</LinkContainer>
         </Links>
       </HeaderContainer>
