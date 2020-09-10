@@ -1,6 +1,5 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import logo from "./logo.svg"
 
 import { LogoContainer } from "./header"
 import SocialMedia from "../social-media/social-media"
@@ -11,7 +10,7 @@ const FooterContainer = styled.div`
   max-width: 1400px;
 `
 
-const Layout = styled.div`
+export const Layout = styled.div`
   display: flex;
   flex-direction: ${({ direction = "row" }) => direction};
 
@@ -19,6 +18,12 @@ const Layout = styled.div`
     props.justify &&
     css`
       justify-content: ${props.justify};
+    `}
+
+  ${props =>
+    props.align &&
+    css`
+      align-items: ${props.align};
     `}
 `
 
@@ -49,7 +54,7 @@ const Footer = () => {
               <Cosmo>Computer Science Mentoring Organization</Cosmo>
             </Layout>
           </Layout>
-          <Layout justify="flex-end">
+          <Layout align="flex-end" direction="column">
             <Title style={{ marginTop: "-7px" }}>
               Follow us on social media!
             </Title>
