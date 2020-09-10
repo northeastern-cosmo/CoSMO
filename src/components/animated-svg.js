@@ -7,14 +7,15 @@ const MorphWrap = styled.div`
     width:100%;
     height:100%;
     min-width: 1800px`
-    const Morph = styled.svg`
+const Morph = styled.svg`
     position: absolute;
     margin: auto;`
 const AnimatedSVG = (props) => {
     const { height, width } = useWindowDimensions();
     const scale = 1.1;
     const style = {
-        top: (height/2) - 550
+        top: (height/2) - 550,
+        left:(width/2) - 900
     };
     return (
         <MorphWrap>

@@ -14,7 +14,7 @@ export const LogoContainer = styled.img`
 const HeaderContainer = styled.header`
   margin: 0 auto;
   max-width: 1400px;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.25rem 0;
 
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ const Header = () => (
   >
     <HeaderContainer>
       <Link to="/">
-        <LogoContainer src={logo} alt="cosmo logo" width="105" height="105" />
+        <LogoContainer src={logo} alt="cosmo logo" width="90" height="90" />
       </Link>
       <Links>
         <LinkContainer to="/">about</LinkContainer>

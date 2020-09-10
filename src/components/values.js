@@ -1,7 +1,9 @@
 import styled from "styled-components"
 import SectionContainer from "./section-container"
 import Showcase from "./showcase"
-import logo from "../components/header-footer/logo.svg"
+import community from "../images/community.svg"
+import collaboration from "../images/collaboration.svg"
+import mentorship from "../images/mentorship.svg"
 import { useScrollMonitor } from "scrollmonitor-hooks"
 import React, { useRef } from "react"
 
@@ -9,27 +11,25 @@ const Title = styled.p`
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 58px;
   line-height: 65px;
-  padding-top: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 80px 100px 100px 100px;
   max-width: 1100px;
   color: white;
 `
 const valuesSectionShowcaseProps = {
   itemProps: [
     {
-      imgsrc: logo,
-      alt: "logo",
+      imgsrc: mentorship,
+      alt: "Mentorship",
     },
     {
-      imgsrc: logo,
-      alt: "logo",
+      imgsrc: collaboration,
+      alt: "Collaboration",
     },
     {
-      imgsrc: logo,
-      alt: "logo",
+      imgsrc: community,
+      alt: "Community",
     },
   ],
 }
@@ -40,8 +40,7 @@ const Values = ({ callbacks }) => {
   return (
     <SectionContainer>
       <Title>
-        Our goals... idk what to put here lol but this is space we can put more
-        info
+        Our Pillars?? idk what to put here
       </Title>
       <Showcase ref={ref} props={valuesSectionShowcaseProps} />
     </SectionContainer>
