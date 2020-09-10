@@ -340,9 +340,6 @@ const IndexPage = () => {
       },
     },
   ]
-  DOM.svg = document.querySelector(".morph")
-  DOM.frontShapeEl = DOM.svg?.querySelector(".front-path")
-  DOM.backShapeEl = DOM.svg?.querySelector(".back-path")
 
   // initShapeEl
   useEffect(() => {
@@ -397,15 +394,11 @@ const IndexPage = () => {
   });
   */
 
-  useEffect(() => {
-    window.addEventListener("click", function (event) {
-      console.log(event)
-    })
-
-    return window.removeEventListener("click", () => {})
-  }, [])
   // On step change
   useEffect(() => {
+    DOM.svg = document.querySelector(".morph")
+    DOM.frontShapeEl = DOM.svg?.querySelector(".front-path")
+    DOM.backShapeEl = DOM.svg?.querySelector(".back-path")
     anime.remove(DOM.frontShapeEl)
     anime.remove(DOM.backShapeEl)
     anime({
