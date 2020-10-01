@@ -32,14 +32,6 @@ const Header = styled.div`
   line-height: 20px;
 `
 
-const years = {
-  1: "1st",
-  2: "2nd",
-  3: "3rd",
-  4: "4th",
-  5: "5th",
-}
-
 const MentorContainer = styled.div`
   padding: 20px;
   margin: 20px;
@@ -54,13 +46,13 @@ const Mentor = ({
   lastName,
   year,
   major,
+  minor,
+  concentration,
   email,
   skills = [],
   work = [],
 }) => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const strYear = years[year]
 
   return (
     <MentorContainer isOpen={isOpen}>
@@ -70,12 +62,14 @@ const Mentor = ({
           <Name>{lastName}</Name>
           <Layout>
             <Major>{major}</Major>
-            <Major>concentration</Major>
+            {minor && <Major>{`Minor(s): ${minor}`}</Major>}
+            {concentration && (
+              <Major>{`Concentration (s): ${concentration}`}</Major>
+            )}
           </Layout>
-          <Info>{`${strYear} Year`}</Info>
+          <Info>{year}</Info>
           <Info>{email}</Info>
           {!isOpen && <p>{skills.map(skill => `#${skill} `)}</p>}
-
         </Layout>
         {isOpen && (
           <div>

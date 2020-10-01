@@ -14,6 +14,7 @@ import Community from "../components/community"
 const NUM_SECTIONS = 5
 
 const Background = styled.div`
+  margin: 0 auto;
   background: #041454;
   position: relative;
   z-index: 1;
@@ -35,7 +36,7 @@ const MorphWrap = styled.div`
 
 //front is second in the array, second in the html
 const isOnPage = []
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   const [step, setStep] = useState(0)
   //const [needsLoop, setNeedsLoop] = useState(true);
   //const [initShapeLoopStep, setShapeLoopStep] = useState(0);
@@ -448,7 +449,6 @@ const IndexPage = () => {
       fullyEnterViewport: () => {
         if (!isOnPage[idx]) {
           isOnPage[idx] = true
-          console.log(idx + "enters")
           setStep(idx)
         }
       },
