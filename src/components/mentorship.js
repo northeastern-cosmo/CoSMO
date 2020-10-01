@@ -99,24 +99,13 @@ const Mentorship = ({ callbacks }) => {
           </InfoSection>
           <InfoSection>
             The mentorship program runs during both the fall and spring
-            semesters. Sign-ups are currently open for
-            <Link href={mentorFormURL}> mentors</Link> and
-            <Link href={menteeFormURL}> mentees</Link>. No experience is
-            necessary to join the program, and everyone who signs up will be
-            paired with a mentor.
+            semesters. No experience is necessary to join the program, and
+            everyone who signs up will be paired with a mentor.
           </InfoSection>
           <InfoSection>
             Check out our mentorship FAQ or contact us for more information!
           </InfoSection>
         </InfoContainer>
-        <ButtonContainer>
-          <Button role="link" href={mentorFormURL}>
-            Mentor Signup
-          </Button>
-          <Button role="link" href={menteeFormURL}>
-            Mentee Signup
-          </Button>
-        </ButtonContainer>
       </TitleContainer>
     </SectionContainer>
   )

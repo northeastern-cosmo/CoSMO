@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Northeastern Computer Science Mentoring Organization`,
+    description: `The Computer Science Mentoring Organization at Northeastern University`,
+    author: `@cosmo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,6 +24,13 @@ module.exports = {
             variants: [`400`, `600`, `700`],
           },
         ],
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
