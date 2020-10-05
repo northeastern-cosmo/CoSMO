@@ -2,7 +2,7 @@
   {
     "firstName": "Casey",
     "lastName": "Pancoast",
-    "experience": "ML in Experimental particle physics",
+    "experience": ["ML in experimental particle physics"],
     "pronouns": "He",
     "email": "pancoast.c@northeastern.edu",
     "year": "Fourth Year",
@@ -13,7 +13,7 @@
   {
     "firstName": "Jamie",
     "lastName": "Camera",
-    "experience": "Unity - QA engineer for a game engine company \nMassDigi - 12 week program to make and release a game from start to finish",
+    "experience": ["Unity", "MassDigi"],
     "pronouns": "She/her",
     "email": "camera.j@northeastern.edu",
     "year": "Fourth Year",
@@ -23,7 +23,7 @@
   {
     "firstName": "Jessica",
     "lastName": "van de Ven",
-    "experience": "Software Engineer at Iron Mountain: remotely working with team members to build infrastructure with Google Cloud Platform. This required much self directed learning and problem solving, as well as intentional effort to socialize with coworkers to build relationships.",
+    "experience": ["Iron Mountain"],
     "pronouns": "She/her",
     "email": "vandeven.j@northeastern.edu",
     "year": "Third Year",
@@ -43,7 +43,7 @@
   {
     "firstName": "Justin",
     "lastName": "Flodman",
-    "experience": "Investor Relations (Wayfair)",
+    "experience": ["Wayfair - Investor Relations"],
     "pronouns": "He / Him",
     "email": "flodman.j@northeastern.edu",
     "year": "Third Year",
@@ -66,7 +66,7 @@
   {
     "firstName": "Thomas",
     "lastName": "Mazeika",
-    "experience": "DevOps; wrote QA automation, managed servers, used Jenkins, wrote Selenium tests, made an experimental project using AWS...",
+    "experience": ["DevOps"],
     "pronouns": "He/him/his",
     "email": "mazeika.t@northeastern.edu",
     "year": "Third Year",
@@ -76,7 +76,7 @@
   {
     "firstName": "Cameron",
     "lastName": "Perry",
-    "experience": "I was an engineering intern at Disruptor Beam last summer. Disruptor Beam was a game company that made mobile games based on popular IPs. While there, I worked on two separate projects, one recently just released on the app store this past week. I worked both client side in Unity and server side in Ruby to create player support tools. \n\nI am also currently working for Code Coven, as an engineer, and while this is not technically a co-op, I was able to home my skills as both a programmer and a game developer. At Code Coven I worked as the sole programmer, and was able to try new things in Unity.",
+    "experience": ["Disruptor Beam", "Code Coven"],
     "pronouns": "They/them or She/her",
     "email": "perry.ca@northeastern.edu",
     "year": "Fourth Year",
@@ -86,7 +86,14 @@
   {
     "firstName": "Isabel",
     "lastName": "Tripp",
-    "experience": "Full-stack development in industry (PowerAdvocate, Square Roots), full-stack development in the public sector (Civic Digital Fellowship/US Census Bureau), web development and machine learning in academia (Northeastern University Neurobiology Lab, Institute for Astronomy at the University of Hawai'i)",
+    "experience": [
+      "PowerAdvocate",
+      "Square Roots",
+      "Civic Digital Fellowship",
+      "US Census Bureau",
+      "Northeastern University Neurobiology Lab",
+      "Institute for Astronomy at the University of Hawai'i"
+    ],
     "pronouns": "she/her/hers",
     "email": "trippisabel@gmail.com",
     "year": "Fifth Year",
@@ -106,7 +113,7 @@
   {
     "firstName": "Steve",
     "lastName": "Flanagan",
-    "experience": "One research coop, one self-directed coop to found a startup Bountium",
+    "experience": ["Research coop", "Bountium (self-directed co-op)"],
     "email": "flanagan.s@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science",
@@ -116,7 +123,7 @@
   {
     "firstName": "Verda",
     "lastName": "Bursal",
-    "experience": "I did one co-op as a software engineer at Framework Homeownership last fall. I have been working there part-time ever since, and I absolutely adore my company, my team, and my job. Aside from my co-op, I’ve also done a brief stint in freelance web design and development, I’m a president of Bits&Bots at Northeastern, and I’m a Software Project Lead at Generate (also at Northeastern).",
+    "experience": ["Framework Homeownership", "Generate"],
     "pronouns": "she/her/hers",
     "email": "bursal.v@northeastern.edu",
     "year": "Fifth Year",
@@ -136,7 +143,7 @@
   {
     "firstName": "Rebecca",
     "lastName": "Malcolm",
-    "experience": "Analytics Platform Co-op for Warner Bros. Analytics, working out of WB Games Boston studio location. I worked on the Data Engineering team within WBA: building monitoring tools, modifying production code, adding to an existing automated test framework, and maintaining AWS environments. It was an Agile scrum team. Some experience with databases and managing build configurations. I also befriended some of the game studio engineers/production team.",
+    "experience": ["Warner Bros. Analytics"],
     "pronouns": "She/Her",
     "email": "malcolm.r@northeastern.edu",
     "year": "Fourth Year",
@@ -161,7 +168,7 @@
   {
     "firstName": "Catherine",
     "lastName": "Romanova",
-    "experience": "- full stack software engineer at ezCater\n- software engineer at InsightSquared, mostly front end",
+    "experience": ["ezCater", "InsightSquared"],
     "pronouns": "she/her",
     "email": "catherinealexa19@gmail.com",
     "year": "Fifth Year",
@@ -179,7 +186,11 @@
   {
     "firstName": "Jenn",
     "lastName": "Der",
-    "experience": "3 co-ops, 2 in the boston area, 1 in SF\nMassachusetts Medical Society (QA Engineer/Business Analyst)\nKyruus (Software Engineering Co-op in Search, Python API/Middleware)\nCertain Lending (Full Stack Software Engineer)",
+    "experience": [
+      "Massachusetts Medical Society",
+      "Kyruus",
+      "Certain Lending"
+    ],
     "pronouns": "she/her",
     "email": "der.je@northeastern.edu",
     "year": "Fifth Year",
@@ -197,7 +208,7 @@
   {
     "firstName": "Isabel",
     "lastName": "Bolger",
-    "experience": "Software Engineer Intern in San Francisco at Skillz, a mobile e-sports company.",
+    "experience": ["Skillz"],
     "pronouns": "she/her",
     "email": "bolger.i@northeastern.edu",
     "year": "Fourth Year",
@@ -217,7 +228,7 @@
   {
     "firstName": "Daniel",
     "lastName": "Melcer",
-    "experience": "0 (summer internship after freshman year). Software development at Forward Thinking Systems (~50 person company)\n1. Research co-op in machine learning\n2. Software developer co-op at Datto (~2000 person tech company)",
+    "experience": ["Forward Thinking Systems", "ML research co-op", "Datto"],
     "pronouns": "He",
     "email": "dmelcer9@gmail.com",
     "year": "Fourth Year",
@@ -229,7 +240,7 @@
   {
     "firstName": "Izzy",
     "lastName": "Berzsenyi",
-    "experience": "My first co-op was at Thermo Fisher Scientific as a Software Engineer. I was working on software for gas analysis machines. My longer term project was implementing a new stricter security feature to adhere to new laws in California.\n\nMy second and current co-op is at AppFolio, working on the payments platform for MyCase. MyCase is a law practice management application. Currently my team is creating a new feature that would help gain larger firms as customers.",
+    "experience": ["Thermo Fisher Scientific", "AppFolio"],
     "pronouns": "She/her",
     "email": "berzsenyi.i@northeastern.edu",
     "year": "Fourth Year",
@@ -240,7 +251,7 @@
   {
     "firstName": "Dania ",
     "lastName": "Abuhijleh ",
-    "experience": "Currently doing a software engineering co-op at the Broad Institute of MIT and Harvard, started remotely and am leading a project from scratch so it involves a lot of design as well as engineering. It has been very useful meeting mentors from cosmo in the past so I'd love to give back! ",
+    "experience": ["Broad Institute of MIT and Harvard"],
     "pronouns": "She/her/hers",
     "email": "abuhijleh.d@northeastern.edu",
     "year": "Third Year",
@@ -251,7 +262,7 @@
   {
     "firstName": "Natalie",
     "lastName": "Hsu",
-    "experience": "UX Developer at Chewy. Worked on engineering and designing user interface components for Chewy's website.",
+    "experience": ["Chewy"],
     "email": "hsu.na@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science and Interaction Design",
@@ -261,7 +272,11 @@
   {
     "firstName": "Becca",
     "lastName": "McBrayer",
-    "experience": "State Street Global Exchange - Quantextual Research Co-op: python scripting and a small amount of unsupervised machine learning and natural language processing. RightHand Robotics - Research & Development Co-op: computer vision and 3D modeling. Alteryx (FeatureLabs) - software engineer automating machine learning.",
+    "experience": [
+      "State Street Global Exchange",
+      "RightHand Robotics",
+      "Alteryx (FeatureLabs)"
+    ],
     "pronouns": "She/her/hers",
     "email": "mcbrayer.r@northeastern.edu",
     "year": "Fifth Year",
@@ -271,7 +286,7 @@
   {
     "firstName": "Katie",
     "lastName": "Busemeyer",
-    "experience": "Rue La La - business intelligence, data analytics; ezCater - fullstack development, Bank of America - worked on a UI team, learning front-end related tech; Trifacta - was in SF, CA - full-stack development",
+    "experience": ["Rue La La", "ezCater", "Bank of America", "Trifacta"],
     "pronouns": "she/her/hers",
     "email": "busemeyer.k@northeastern.edu",
     "year": "Fifth Year",
@@ -287,7 +302,7 @@
   {
     "firstName": "Bryce",
     "lastName": "DeWitt",
-    "experience": "1) digital business analyst for IT at MFS helping the project management side of their website redesign.\n2) Web Developer at MullenLowe, an advertising firm based in Boston doing website development for their clients\n3) React Developer at Campfire Technology, a northeastern startup that provides storyboarding software to writers ",
+    "experience": ["MFS", "MullenLowe", "Campfire Technology"],
     "pronouns": "He/his/him",
     "email": "dewitt.b@northeastern.edu",
     "year": "Fifth Year",
@@ -304,7 +319,7 @@
   {
     "firstName": "Felicia",
     "lastName": "Zhang",
-    "experience": "Cooped at Carbonite, Google, Drift and Facebook. mostly web dev, some VR & infra stuff",
+    "experience": ["Carbonite", "Google", "Drift", "Facebook"],
     "pronouns": "she/hers",
     "email": "zhang.fel@northeastern.edu",
     "year": "Fifth Year",
@@ -316,7 +331,7 @@
   {
     "firstName": "Vera",
     "lastName": "Kong",
-    "experience": "I have done 1 co-op so far at HubSpot as a Software Engineer. Specifically, I worked as a backend engineer dealing with product configuration, REST APIs, SQL databases, and Kafka to name a few. Most of the codebase was in Java so yay fundies 2/OOD for doing something.",
+    "experience": ["HubSpot"],
     "email": "kong.v@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science and Math",
@@ -334,7 +349,12 @@
   {
     "firstName": "Irene",
     "lastName": "Pham",
-    "experience": "Web application development at Boston DNA testing start up using angular and spring boot. Web application development internship at large biotech company in California using React. Data management and pipeline coop at pharmaceutical giant Roche in South San Francisco. Internship at ServiceNow on the chat bot team. ",
+    "experience": [
+      "Boston DNA testing start up",
+      "Biotech company",
+      "Roche",
+      "ServiceNow"
+    ],
     "pronouns": "she her ",
     "email": "pham.i@husky.neu.edu",
     "year": "Fourth Year",
@@ -355,7 +375,7 @@
   {
     "firstName": "Martin",
     "lastName": "Petrauskas",
-    "experience": "Integrity Security Services, Software Engineer, Jul-Dec 2019: worked as a software engineer in Boston to create customer monitoring software which is now being used in automotive factories across the world\nDepartment of Defense, Network Security Engineer & Scientist, May-Dec 2020: this is my current co-op in Charleston, SC. Cannot discuss my work due to national security concerns",
+    "experience": ["Integrity Security Services", "Department of Defense"],
     "pronouns": "He/Him/His",
     "email": "petrauskas.m@northeastern.edu",
     "year": "Fourth Year",
@@ -367,7 +387,7 @@
   {
     "firstName": "Cara",
     "lastName": "Sciorilli",
-    "experience": "iSpecimen - Software engineer, worked on a web application that sold human specimens to researcher\nPivotal - Worked on developer to developer tools to deploy code on different cloud platforms, worked in the Microsoft Windows team and worked with customers directly.\nMercari - Backend on the mercari app, working on customer retention, coupon integration and data engineering",
+    "experience": ["iSpecimen", "Pivotal", "Mercari"],
     "pronouns": "she/her/hers",
     "email": "sciorilli.c@northeastern.edu",
     "year": "Fifth Year",
@@ -386,7 +406,7 @@
   {
     "firstName": "Shreya",
     "lastName": "Yalamanchili",
-    "experience": "I was a Business Process Analyst Co-Op at bluebird bio from January-August 2020. During my time there, I created dashboards, developed programs to resolve inefficiencies within metrics, and optimized business processes. ",
+    "experience": ["Bluebird Bio"],
     "pronouns": "she/her/hers",
     "email": "yalamanchili.s@northeastern.edu",
     "year": "Third Year",
@@ -403,7 +423,7 @@
   {
     "firstName": "Ali",
     "lastName": "Schueler",
-    "experience": "Protein Production Group at Jounce Therapeutics, a Bio based co-op working with high throughput machinery and protein purification methods",
+    "experience": ["Jounce Therapeutics"],
     "pronouns": "She/Her/Hers",
     "email": "schueler.a@northeastern.edu",
     "year": "Third Year",
@@ -420,7 +440,7 @@
   {
     "firstName": "Jean",
     "lastName": "Zhang",
-    "experience": "I was a Full Stack Software Developer at PowerAdvocate for my first co-op. My second co-op was as a Front-End Software Engineer at HubSpot. I was a Software Engineering Intern this summer at Facebook",
+    "experience": ["PowerAdvocate", "HubSpot", "Facebook"],
     "pronouns": "she/her",
     "email": "zhang.je@northeastern.edu",
     "year": "Fourth Year",
@@ -440,7 +460,7 @@
   {
     "firstName": "Kelsey",
     "lastName": "Esposito",
-    "experience": "Eaton Vance - Equity Data Science Role, built models using financial data to predict stock performance\nFacebook - Data Engineer Role, created data pipelines, databases, and dashboards to help improve performance and reliability of product",
+    "experience": ["Eaton Vance", "Facebook"],
     "pronouns": "she/her/hers",
     "email": "esposito.ke@northeastern.edu",
     "year": "Fourth Year",
@@ -457,7 +477,7 @@
   {
     "firstName": "Raymond",
     "lastName": "Huang",
-    "experience": "Intuit, Pison, Facebook (ask ray for more information)",
+    "experience": ["Intuit", "Pison", "Facebook"],
     "pronouns": "he/him/his",
     "email": "huang.ra@northeastern.edu",
     "year": "Fifth Year",
@@ -468,7 +488,7 @@
   {
     "firstName": "Megan",
     "lastName": "Lau",
-    "experience": "She has five co-ops and internships as Frontend Engineer for Mark43 enhancing the frontend UI for police, Backend Engineer for MineralTree working on microservice APIs, Associate Product Manager for CameraIQ working on the future of AR and content marketing, and much more. She is proficient in Java, Python, SQL, React, which are core to development at Facebook and have worked with large-scale and complex code bases with crucial data impacting life or death situations. Megan is a great candidate who is quick to learn new topics and has an enthusiastic personality to initiate solutions.",
+    "experience": ["Mark43", "MineralTree", "CameraIQ"],
     "pronouns": "she, her, hers",
     "email": "lau.m.megan@gmail.com",
     "year": "Fifth Year",
@@ -486,7 +506,7 @@
   {
     "firstName": "Jolene",
     "lastName": "Okamoto",
-    "experience": "I was a swe co-op at a med-tech startup in Boston. Mainly worked on application development.",
+    "experience": ["Med-tech startup"],
     "pronouns": "she/her/hers",
     "email": "okamoto.j@northeastern.edu",
     "year": "Third Year",
@@ -497,7 +517,7 @@
   {
     "firstName": "Andrei",
     "lastName": "Lougovtsov",
-    "experience": "ThriveHive (Full Stack and Data Engineering), Wayfair (Big Data Engineering on Customer Intelligence), contracting at various startups in Software and Data Engineering roles",
+    "experience": ["ThriveHive", "Wayfair", "contracting for various places"],
     "pronouns": "He/Him",
     "email": "lougovtsov.an@northeastern.edu",
     "year": "Fourth Year",
@@ -514,7 +534,12 @@
   {
     "firstName": "Daniel",
     "lastName": "Goldstein",
-    "experience": "Full-stack developer co-op at PowerAdvocate — worked with Java Spring and Postgres to make an internal reporting webapp\n\nSoftware Engineering on Hail team at Broad Institute — worked on a scientific computing compiler to do linear algebra on distributed genetic datasets quickly\n\nAlgorithms Research at Oxford University — developed efficient algorithms for computing on genetic data leveraging a neat data structure that greatly compresses the data and allows for really fast analysis\n\nTraffic Engineering intern at Slack — contributed to an open source tool, Envoy, used to direct web traffic and connect internal slack services",
+    "experience": [
+      "PowerAdvocate",
+      "Broad Institute",
+      "Oxford University",
+      "Slack"
+    ],
     "pronouns": "He / Him / His",
     "email": "goldstein.d@northeastern.edu",
     "year": "Fifth Year",
