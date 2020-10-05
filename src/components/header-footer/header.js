@@ -7,6 +7,7 @@ import logo from "./logo.svg"
 export const LogoContainer = styled.img`
   height: ${({ height = 105 }) => `${height}px`};
   width: ${({ width = 105 }) => `${width}px`}};
+  color: ${({ color = "#ffffff" }) => color}};
 
   margin-bottom: ${({ bottom = 0 }) => bottom + "px"};
   margin-top: ${({ top = 0 }) => top + "px"};

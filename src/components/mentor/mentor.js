@@ -18,7 +18,9 @@ const Major = styled.div`
   font-size: 18px;
   line-height: 19px;
 
-  margin: 10px 0px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 `
 
 const Info = styled.div`
@@ -36,9 +38,20 @@ const MentorContainer = styled.div`
   padding: 20px;
   margin: 20px;
 
-  flex-basis: 20%;
+  width: 30%;
+  height: ${({ isOpen = false }) => (isOpen ? "auto" : "300px")};
+  cursor: pointer;
 
   background: ${props => (props.isOpen ? "#ffffff" : "#d9e2ff")};
+`
+
+const InterestContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 32px;
+  line-clamp: 2;
+  overflow: hidden;
 `
 
 const Mentor = ({
@@ -49,7 +62,7 @@ const Mentor = ({
   minor,
   concentration,
   email,
-  skills = [],
+  interests = [],
   work = [],
 }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,46 +73,54 @@ const Mentor = ({
         <Layout>
           <Name>{firstName}</Name>
           <Name>{lastName}</Name>
-          <Layout>
-            <Major>{major}</Major>
-            {minor && <Major>{`Minor(s): ${minor}`}</Major>}
-            {concentration && (
-              <Major>{`Concentration (s): ${concentration}`}</Major>
-            )}
-          </Layout>
-          <Info>{year}</Info>
-          <Info>{email}</Info>
-          {!isOpen && <p>{skills.map(skill => `#${skill} `)}</p>}
+          <Major>{major}</Major>
+          {minor && <Major>{`Minor(s): ${minor}`}</Major>}
+          {concentration && (
+            <Major>{`Concentration(s): ${concentration}`}</Major>
+          )}
+          <Info>{`Email: ${email}`}</Info>
+          <Info>{`Year: ${year}`}</Info>
+          {!isOpen && (
+            <InterestContainer>
+              {interests.map(skill => {
+                const combSkill = skill.split(" ").join("_")
+                return (
+                  <span
+                    key={skill}
+                    style={{ fontStyle: "italic", marginRight: "8px" }}
+                  >{`#${combSkill}`}</span>
+                )
+              })}
+            </InterestContainer>
+          )}
         </Layout>
         {isOpen && (
-          <div>
-            <Layout>
-              {skills.length ? (
-                <>
-                  <Header>{`Skills`}</Header>
-                  <Info>
-                    <ul>
-                      {skills.map(skill => (
-                        <li key={skill}>{skill}</li>
-                      ))}
-                    </ul>
-                  </Info>
-                </>
-              ) : null}
-              {work.length ? (
-                <>
-                  <Header>{`Work Experience`}</Header>
-                  <Info>
-                    <ul>
-                      {work.map(workex => (
-                        <li key={workex}>{workex}</li>
-                      ))}
-                    </ul>
-                  </Info>
-                </>
-              ) : null}
-            </Layout>
-          </div>
+          <Layout style={{ marginTop: "32px" }}>
+            {interests.length ? (
+              <>
+                <Header>{"Interests"}</Header>
+                <Info>
+                  <ul>
+                    {interests.map(interest => (
+                      <li key={interest}>{interest}</li>
+                    ))}
+                  </ul>
+                </Info>
+              </>
+            ) : null}
+            {work.length ? (
+              <>
+                <Header>{`Work Experience`}</Header>
+                <Info>
+                  <ul>
+                    {work.map(workex => (
+                      <li key={workex}>{workex}</li>
+                    ))}
+                  </ul>
+                </Info>
+              </>
+            ) : null}
+          </Layout>
         )}
       </div>
     </MentorContainer>

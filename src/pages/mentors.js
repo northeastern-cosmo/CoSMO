@@ -109,7 +109,12 @@ const MentorsPage = () => {
             </SearchContainer>
             <MentorsContainer>
               {mentors.map(mentor => {
-                return <Mentor {...mentor} />
+                return (
+                  <Mentor
+                    key={`${mentor.firstName}-${mentor.lastName}`}
+                    {...mentor}
+                  />
+                )
               })}
               <ContactContainer>
                 <ContactBox />

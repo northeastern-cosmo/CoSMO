@@ -8,7 +8,7 @@
     "year": "Fourth Year",
     "major": "Computer Science and Physics",
     "minor": "Math",
-    "interests": "Neural networks, guitar, backpacking"
+    "interests": ["neural networks", "guitar", "backpacking"]
   },
   {
     "firstName": "Jamie",
@@ -18,7 +18,7 @@
     "email": "camera.j@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science and Game Development ",
-    "interests": "VP of NUGDC, photography, cooking"
+    "interests": ["NUGDC", "photography", "cooking"]
   },
   {
     "firstName": "Jessica",
@@ -28,7 +28,16 @@
     "email": "vandeven.j@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science",
-    "interests": "Book Club/books and reading, Northeastern Survivor, Flute/any Bands, Alpha Chi Omega, intramural cornhole, Agape Christian Fellowship, hiking, Vermont",
+    "interests": [
+      "books",
+      "reading",
+      "Northeastern Survivor",
+      "flute/any Bands",
+      "Alpha Chi Omega",
+      "intramural cornhole",
+      "Agape Christian Fellowship",
+      "hiking Vermont"
+    ],
     "extra": "Participated in NUin"
   },
   {
@@ -40,7 +49,18 @@
     "year": "Third Year",
     "major": "Computer Science and Business",
     "concentration": "Finance",
-    "interests": "Interests (Finance, Investments, FinTech, sports) | Clubs (NUHOC, FFC, FIC, Bull and Bear) | Hobbies (Climbing, Hiking)",
+    "interests": [
+      "finance",
+      "investments",
+      "FinTech",
+      "sports",
+      "NUHOC",
+      "FFC",
+      "FIC",
+      "Bull and Bear",
+      "Climbing",
+      "Hiking"
+    ],
     "extra": "Honors student"
   },
   {
@@ -51,7 +71,7 @@
     "email": "mazeika.t@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science",
-    "interests": "Programming, photography, cooking, web development, "
+    "interests": ["programming", "photography", "cooking", "web development"]
   },
   {
     "firstName": "Cameron",
@@ -61,7 +81,7 @@
     "email": "perry.ca@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science and Game Development",
-    "interests": "Writing, painting and I am currently the president of NUGDC"
+    "interests": ["writing", "painting", "NUGDC"]
   },
   {
     "firstName": "Isabel",
@@ -72,7 +92,15 @@
     "year": "Fifth Year",
     "major": "Computer Science",
     "minor": "Math",
-    "interests": "Tech ethics and policy, environmentalism, art museums, food, club sports (ultimate frisbee), progressive/political groups on campus, NUWiT",
+    "interests": [
+      "Tech ethics and policy",
+      "environmentalism",
+      "art museums",
+      "food",
+      "ultimate frisbee",
+      "progressive/political groups on campus",
+      "NUWiT"
+    ],
     "extra": "Honors student"
   },
   {
@@ -82,7 +110,7 @@
     "email": "flanagan.s@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science",
-    "interests": "Varsity track athlete\nFounder of Bountium, a fintech startup\nInvolved in several entrepreneurship clubs like IDEA and the Sherman Center\nMentor at Oasis, a club helping CS majors make things ",
+    "interests": ["track", "Bountium", "entrepreneurship", "Oasis"],
     "extra": "Honors student"
   },
   {
@@ -93,7 +121,16 @@
     "email": "bursal.v@northeastern.edu",
     "year": "Fifth Year",
     "major": "Computer Science and Cognitive Psychology (combined)",
-    "interests": "I mentioned some of this before, but I run an organization called Bits&Bots at Northeastern, I’m a Software Project Lead in Generate at Northeastern, and I’m also a member of MULTI. Outside of classes/work/clubs, I love making art (lately, mostly digital illustration and fiber art) and getting active (running, biking, hiking.) I’m also developing an app on my own.",
+    "interests": [
+      "Bits&Bots",
+      "Generate",
+      "MULTI",
+      "art",
+      "running",
+      "biking",
+      "hiking",
+      "app development"
+    ],
     "extra": "Honors student"
   },
   {
@@ -104,7 +141,22 @@
     "email": "malcolm.r@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science",
-    "interests": "NU Game Development Club (Social Chair) - main interest is in game development and game industry-adjacent software. I attend game jams, hackathons, and local dev meetups when I can. I'm also a facilitator for an LGBTQIA+ Resource Center affinity group. Tend to cycle through hobbies: cooking/baking, jigsaw puzzles, growing plants, literature, comic books, sci-fi shows, anime, cartoons, playing indie games, MTG or D&D, etc. All-around nerd, without the stigma."
+    "interests": [
+      "NU Game Development Club",
+      "game jams",
+      "hackathons",
+      "local dev meetups",
+      "LGBTQIA+ Resource Center affinity group",
+      "cooking/baking",
+      "jigsaw puzzles",
+      "plants",
+      "literature",
+      "comic books",
+      "sci-fi shows",
+      "anime",
+      "cartoons",
+      "indie games"
+    ]
   },
   {
     "firstName": "Catherine",
@@ -115,7 +167,14 @@
     "year": "Fifth Year",
     "major": "Computer Science",
     "minor": "Biology",
-    "interests": "Book Club/books and reading, Northeastern Survivor, Flute/any Bands, Alpha Chi Omega, intramural cornhole, Agape Christian Fellowship, hiking, Vermont"
+    "interests": [
+      "Club Ultimate Frisbee",
+      "Peace Thru Play",
+      "hiking",
+      "climbing",
+      "community service",
+      "Alternative Spring Break"
+    ]
   },
   {
     "firstName": "Jenn",
@@ -126,7 +185,14 @@
     "year": "Fifth Year",
     "major": "Computer Science and Media Arts",
     "concentration": "Photo/Video",
-    "interests": "CoSMO E-board, HackBeanpot Core Team, baking, running, painting?, other art things"
+    "interests": [
+      "CoSMO",
+      "HackBeanpot",
+      "baking",
+      "running",
+      "painting",
+      "art"
+    ]
   },
   {
     "firstName": "Isabel",
@@ -136,7 +202,16 @@
     "email": "bolger.i@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science",
-    "interests": "Tri Sigma sorority, previously Generate, Cosmo, guitar, tennis, baking, volunteering, mentoring",
+    "interests": [
+      "Tri Sigma",
+      "Generate",
+      "CoSMO",
+      "guitar",
+      "tennis",
+      "baking",
+      "volunteering",
+      "mentoring"
+    ],
     "extra": "Participated in NUin"
   },
   {
@@ -148,7 +223,7 @@
     "year": "Fourth Year",
     "major": "Computer Science",
     "minor": "Math, Physics",
-    "interests": "NUHacks, Times New Roman (satire magazine), enjoy VR",
+    "interests": ["NUHacks", "Times New Roman", "virtual reality"],
     "extra": "Honors student"
   },
   {
@@ -159,7 +234,7 @@
     "email": "berzsenyi.i@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science",
-    "interests": "Traveling, NU Women In Tech, (previous) NUin Spring Greece student",
+    "interests": ["traveling", "NU Women In Tech"],
     "extra": "Participated in NUin"
   },
   {
@@ -170,7 +245,7 @@
     "email": "abuhijleh.d@northeastern.edu",
     "year": "Third Year",
     "major": "Computer science and Mathematics",
-    "interests": "Weightlifting, Reading, Baking and cooking, drawing",
+    "interests": ["weightlifting", "reading", "baking", "cooking", "drawing"],
     "extra": "International Student"
   },
   {
@@ -180,7 +255,7 @@
     "email": "hsu.na@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science and Interaction Design",
-    "interests": "illustration, art, anime, bubble tea",
+    "interests": ["illustration", "art", "anime", "bubble tea"],
     "extra": "Participated in NUin"
   },
   {
@@ -191,7 +266,7 @@
     "email": "mcbrayer.r@northeastern.edu",
     "year": "Fifth Year",
     "major": "Computer Science and Math",
-    "interests": "A cappella (NU Downbeats), rock climbing"
+    "interests": ["A cappella (NU Downbeats)", "rock climbing"]
   },
   {
     "firstName": "Katie",
@@ -201,7 +276,13 @@
     "email": "busemeyer.k@northeastern.edu",
     "year": "Fifth Year",
     "major": "Computer Science and Cognitive Psychology",
-    "interests": "CoSMO! Greek life, intramural soccer"
+    "interests": [
+      "CoSMO",
+      "Greek life",
+      "intramural soccer",
+      "video games",
+      "reading"
+    ]
   },
   {
     "firstName": "Bryce",
@@ -212,7 +293,12 @@
     "year": "Fifth Year",
     "major": "Computer Science and Business Administration",
     "concentration": "Finance",
-    "interests": "Past E-Board of Finance & Investment club, Current E-Board of TEDxNortheasternU, involved in Greek life and NUHOC ",
+    "interests": [
+      "Finance & Investment club",
+      "TEDxNortheasternU",
+      "Greek life",
+      "NUHOC"
+    ],
     "extra": "Participated in NUin"
   },
   {
@@ -224,7 +310,7 @@
     "year": "Fifth Year",
     "major": "Computer Science",
     "notes": "Formerly CE/CS for 4 years",
-    "interests": "clubs: NUWIT, HackBeanpot\ninterests: art, foreign language, baking",
+    "interests": ["NUWIT", "HackBeanpot", "art", " foreign language", "baking"],
     "extra": "Honors student"
   },
   {
@@ -235,7 +321,15 @@
     "year": "Third Year",
     "major": "Computer Science and Math",
     "minor": "Music",
-    "interests": "Hackathons, typeracing, tetris, League of Legends (lol), Generate, Asian Student Union, handball"
+    "interests": [
+      "hackathons",
+      "typetracing",
+      "tetris",
+      "League of Legends",
+      "Generate",
+      "Asian Student Union",
+      "handball"
+    ]
   },
   {
     "firstName": "Irene",
@@ -245,7 +339,17 @@
     "email": "pham.i@husky.neu.edu",
     "year": "Fourth Year",
     "major": "Computer Science and Biology",
-    "interests": "biology, bioinformatics, swimming, baking, cooking, research, health care, reading, hiking and outdoors ",
+    "interests": [
+      "biology",
+      "bioinformatics",
+      "swimming",
+      "baking",
+      "cooking",
+      "research",
+      "health care",
+      "reading",
+      "hiking"
+    ],
     "extra": "Honors student"
   },
   {
@@ -258,7 +362,7 @@
     "major": "Cybersecurity",
     "minor": "Math",
     "concentration": "Cyber Operations",
-    "interests": "Frisbee, surfing, hiking, basically anything outdoors"
+    "interests": ["frisbee", "surfing", "hiking", "being outdoorsr"]
   },
   {
     "firstName": "Cara",
@@ -268,7 +372,15 @@
     "email": "sciorilli.c@northeastern.edu",
     "year": "Fifth Year",
     "major": "Computer Science and Finance",
-    "interests": "Gymnastics, Generate, working with kids, Peace Through Play, Kappa Kappa Gamma, Relay for Life, beach, skiing, ",
+    "interests": [
+      "gymnastics",
+      "Generate",
+      "Peace Through Play",
+      "Kappa Kappa Gamma",
+      " Relay for Life",
+      "beach",
+      "skiing"
+    ],
     "extra": "Honors student"
   },
   {
@@ -279,7 +391,13 @@
     "email": "yalamanchili.s@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science & Business Administration",
-    "interests": "Women in technology, Northeastern Breakfast Club, Active Minds, and I'm really into painting/digital art. ",
+    "interests": [
+      "Women in technology",
+      "Northeastern Breakfast Club",
+      "Active Minds",
+      "painting",
+      "digital art"
+    ],
     "extra": "Honors student"
   },
   {
@@ -290,7 +408,13 @@
     "email": "schueler.a@northeastern.edu",
     "year": "Third Year",
     "major": "Computer Science and Biology",
-    "interests": "NUWIT, Kappa Delta Sorority, Running, Yoga, Reading",
+    "interests": [
+      "NUWIT",
+      "Kappa Delta Sorority",
+      "running",
+      "yoga",
+      "reading"
+    ],
     "extra": "Honors student"
   },
   {
@@ -302,7 +426,15 @@
     "year": "Fourth Year",
     "major": "Computer Science Major",
     "minor": "Interaction Design",
-    "interests": "Clubs that I'm also apart of on campus include Scout, NU Women in Tech, and Asian Student Union. Hobbies of my include cooking, baking, and watching Asian Media. I love trying new places to eat (safely of course!). ",
+    "interests": [
+      "Scout",
+      "NU Women in Tech",
+      "Asian Student Union",
+      "cooking",
+      "baking",
+      "Asian Media",
+      " trying new places to eat"
+    ],
     "extra": "Honors student"
   },
   {
@@ -314,7 +446,12 @@
     "year": "Fourth Year",
     "major": "Data Science",
     "minor": "Math",
-    "interests": "No Limits Dance Crew, embroidery, reading, going to the beach",
+    "interests": [
+      "No Limits Dance Crew",
+      "embroidery",
+      "reading",
+      "going to the beach"
+    ],
     "extra": "Honors student"
   },
   {
@@ -326,7 +463,7 @@
     "year": "Fifth Year",
     "major": "Computer Science and Media Arts",
     "concentration": "Animation",
-    "interests": "CoSMO, animation club"
+    "interests": ["CoSMO", "animation club"]
   },
   {
     "firstName": "Megan",
@@ -336,7 +473,15 @@
     "email": "lau.m.megan@gmail.com",
     "year": "Fifth Year",
     "major": "Computer Science and Marketing Analytics",
-    "interests": "Asian Student union, pan asian american clubs, NUWIT, greek life, hackathons, animal crossing, memes ;)"
+    "interests": [
+      "Asian Student Union",
+      "pan asian american clubs",
+      "NUWIT",
+      "greek life",
+      "hackathons",
+      "animal crossing",
+      "memes"
+    ]
   },
   {
     "firstName": "Jolene",
@@ -347,7 +492,7 @@
     "year": "Third Year",
     "major": "Computer Science",
     "minor": "Interaction Design",
-    "interests": "ASU, volunteering, games, cooking"
+    "interests": ["ASU", "volunteering", "games", "cooking"]
   },
   {
     "firstName": "Andrei",
@@ -357,7 +502,13 @@
     "email": "lougovtsov.an@northeastern.edu",
     "year": "Fourth Year",
     "major": "Computer Science and Finance",
-    "interests": "Ultimate Frisbee Club Team, Enabling Engineering (teaching programming course to special needs students), anything tech-related, tennis, swimming, exercise",
+    "interests": [
+      "Ultimate Frisbee Club Team",
+      "Enabling Engineerin",
+      "tennis",
+      "swimming",
+      "exercise"
+    ],
     "extra": "Honors student"
   },
   {
@@ -368,7 +519,12 @@
     "email": "goldstein.d@northeastern.edu",
     "year": "Fifth Year",
     "major": "Computer Science and Math",
-    "interests": "TA for Fundies 1 (I love it!)\nHusky Ambassador\nRunning / occasionally Muay Thai\n",
+    "interests": [
+      "TA for Fundies ",
+      "Husky Ambassador",
+      "running",
+      "muay thai"
+    ],
     "extra": "Honors student"
   }
 ]
