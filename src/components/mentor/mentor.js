@@ -4,6 +4,8 @@ import styled from "styled-components"
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 0;
+  overflow: hidden;
 `
 const Name = styled.div`
   font-style: normal;
@@ -37,7 +39,9 @@ const Header = styled.div`
 const MentorContainer = styled.div`
   padding: 20px;
   margin: 20px;
+  display: flex;
 
+  min-width: 375px;
   width: 30%;
   height: ${({ isOpen = false }) => (isOpen ? "auto" : "300px")};
   cursor: pointer;
@@ -46,83 +50,87 @@ const MentorContainer = styled.div`
 `
 
 const InterestContainer = styled.div`
-  display: flex;
+  display: inline-flex;
+  flex-grow: 0;
   flex-wrap: wrap;
 
-  margin-top: 32px;
-  line-clamp: 2;
-  overflow: hidden;
+  margin-top: 16px;
 `
 
 const Mentor = ({
   firstName,
   lastName,
+  pronouns,
   year,
   major,
   minor,
   concentration,
   email,
   interests = [],
-  work = [],
+  experience = [],
 }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <MentorContainer isOpen={isOpen}>
-      <div onClick={() => setIsOpen(prevOpen => !prevOpen)}>
-        <Layout>
-          <Name>{firstName}</Name>
-          <Name>{lastName}</Name>
-          <Major>{major}</Major>
-          {minor && <Major>{`Minor(s): ${minor}`}</Major>}
-          {concentration && (
-            <Major>{`Concentration(s): ${concentration}`}</Major>
-          )}
-          <Info>{`Email: ${email}`}</Info>
-          <Info>{`Year: ${year}`}</Info>
-          {!isOpen && (
-            <InterestContainer>
-              {interests.map(skill => {
-                const combSkill = skill.split(" ").join("_")
-                return (
-                  <span
-                    key={skill}
-                    style={{ fontStyle: "italic", marginRight: "8px" }}
-                  >{`#${combSkill}`}</span>
-                )
-              })}
-            </InterestContainer>
-          )}
-        </Layout>
-        {isOpen && (
-          <Layout style={{ marginTop: "32px" }}>
-            {interests.length ? (
-              <>
-                <Header>{"Interests"}</Header>
-                <Info>
-                  <ul>
-                    {interests.map(interest => (
-                      <li key={interest}>{interest}</li>
-                    ))}
-                  </ul>
-                </Info>
-              </>
-            ) : null}
-            {work.length ? (
-              <>
-                <Header>{`Work Experience`}</Header>
-                <Info>
-                  <ul>
-                    {work.map(workex => (
-                      <li key={workex}>{workex}</li>
-                    ))}
-                  </ul>
-                </Info>
-              </>
-            ) : null}
-          </Layout>
+    <MentorContainer
+      isOpen={isOpen}
+      onClick={() => setIsOpen(prevOpen => !prevOpen)}
+    >
+      <Layout>
+        <Name>{firstName}</Name>
+        <Name>{lastName}</Name>
+        <p>{pronouns}</p>
+        <Major>{major}</Major>
+        {minor && <Major>{`Minor(s): ${minor}`}</Major>}
+        {concentration && <Major>{`Concentration(s): ${concentration}`}</Major>}
+        <Info>{`Email: ${email}`}</Info>
+        <Info>{`Year: ${year}`}</Info>
+        {!isOpen && (
+          <InterestContainer>
+            {interests.map(skill => {
+              const combSkill = skill.split(" ").join("_")
+              return (
+                <p
+                  key={skill}
+                  style={{
+                    fontStyle: "italic",
+                    marginRight: "8px",
+                    marginBottom: "0px",
+                  }}
+                >{`#${combSkill}`}</p>
+              )
+            })}
+          </InterestContainer>
         )}
-      </div>
+      </Layout>
+      {isOpen && (
+        <Layout style={{ marginTop: "32px" }}>
+          {interests.length ? (
+            <>
+              <Header>{"Interests"}</Header>
+              <Info>
+                <ul>
+                  {interests.map(interest => (
+                    <li key={interest}>{interest}</li>
+                  ))}
+                </ul>
+              </Info>
+            </>
+          ) : null}
+          {experience.length ? (
+            <>
+              <Header>{`Work Experience`}</Header>
+              <Info>
+                <ul>
+                  {experience.map(workExp => (
+                    <li key={workExp}>{workExp}</li>
+                  ))}
+                </ul>
+              </Info>
+            </>
+          ) : null}
+        </Layout>
+      )}
     </MentorContainer>
   )
 }

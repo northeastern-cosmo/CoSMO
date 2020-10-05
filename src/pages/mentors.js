@@ -79,6 +79,7 @@ const MentorsPage = () => {
           minor
           concentration
           pronouns
+          experience
           year
         }
       }
@@ -95,7 +96,7 @@ const MentorsPage = () => {
         </TitleContainer>
         {hasStarted ? (
           <>
-            <SearchContainer>
+            {/* <SearchContainer>
               <SearchText>
                 Search for someone by name, experience, skills, etc!
               </SearchText>
@@ -106,7 +107,7 @@ const MentorsPage = () => {
                 />
                 <SearchIcon className="material-icons">search</SearchIcon>
               </SearchBoxText>
-            </SearchContainer>
+            </SearchContainer> */}
             <MentorsContainer>
               {mentors.map(mentor => {
                 return (
