@@ -98,9 +98,12 @@ const Mentorship = ({ callbacks }) => {
             student at Northeastern, or a career in computer science.
           </InfoSection>
           <InfoSection>
-            The mentorship program runs during both the fall and spring
-            semesters. Sign-ups are currently open for
-            <Link href={mentorFormURL}> mentors</Link> and
+            The mentorship program runs during both the fall and spring The
+            mentorship program runs during both the fall and spring semesters.
+            Sign-ups are currently open for semesters. No experience is
+            necessary to join the program, and
+            <Link href={mentorFormURL}> mentors</Link> and everyone who signs up
+            will be paired with a mentor.
             <Link href={menteeFormURL}> mentees</Link>. No experience is
             necessary to join the program, and everyone who signs up will be
             paired with a mentor.
@@ -109,14 +112,6 @@ const Mentorship = ({ callbacks }) => {
             Check out our mentorship FAQ or contact us for more information!
           </InfoSection>
         </InfoContainer>
-        <ButtonContainer>
-          <Button role="link" href={mentorFormURL}>
-            Mentor Signup
-          </Button>
-          <Button role="link" href={menteeFormURL}>
-            Mentee Signup
-          </Button>
-        </ButtonContainer>
       </TitleContainer>
     </SectionContainer>
   )

@@ -1,0 +1,555 @@
+[
+  {
+    "firstName": "Casey",
+    "lastName": "Pancoast",
+    "experience": ["ML in experimental particle physics"],
+    "pronouns": "He",
+    "email": "pancoast.c@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science and Physics",
+    "minor": "Math",
+    "interests": ["neural networks", "guitar", "backpacking"]
+  },
+  {
+    "firstName": "Jamie",
+    "lastName": "Camera",
+    "experience": ["Unity", "MassDigi"],
+    "pronouns": "She/her",
+    "email": "camera.j@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science and Game Development ",
+    "interests": ["NUGDC", "photography", "cooking"]
+  },
+  {
+    "firstName": "Jessica",
+    "lastName": "van de Ven",
+    "experience": ["Iron Mountain"],
+    "pronouns": "She/her",
+    "email": "vandeven.j@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science",
+    "interests": [
+      "books",
+      "reading",
+      "Northeastern Survivor",
+      "flute/any Bands",
+      "Alpha Chi Omega",
+      "intramural cornhole",
+      "Agape Christian Fellowship",
+      "hiking Vermont"
+    ],
+    "extra": "Participated in NUin"
+  },
+  {
+    "firstName": "Justin",
+    "lastName": "Flodman",
+    "experience": ["Wayfair - Investor Relations"],
+    "pronouns": "He / Him",
+    "email": "flodman.j@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science and Business",
+    "concentration": "Finance",
+    "interests": [
+      "finance",
+      "investments",
+      "FinTech",
+      "sports",
+      "NUHOC",
+      "FFC",
+      "FIC",
+      "Bull and Bear",
+      "Climbing",
+      "Hiking"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Thomas",
+    "lastName": "Mazeika",
+    "experience": ["DevOps"],
+    "pronouns": "He/him/his",
+    "email": "mazeika.t@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science",
+    "interests": ["programming", "photography", "cooking", "web development"]
+  },
+  {
+    "firstName": "Cameron",
+    "lastName": "Perry",
+    "experience": ["Disruptor Beam", "Code Coven"],
+    "pronouns": "They/them or She/her",
+    "email": "perry.ca@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science and Game Development",
+    "interests": ["writing", "painting", "NUGDC"]
+  },
+  {
+    "firstName": "Isabel",
+    "lastName": "Tripp",
+    "experience": [
+      "PowerAdvocate",
+      "Square Roots",
+      "Civic Digital Fellowship",
+      "US Census Bureau",
+      "Northeastern University Neurobiology Lab",
+      "Institute for Astronomy at the University of Hawai'i"
+    ],
+    "pronouns": "she/her/hers",
+    "email": "trippisabel@gmail.com",
+    "year": "Fifth Year",
+    "major": "Computer Science",
+    "minor": "Math",
+    "interests": [
+      "Tech ethics and policy",
+      "environmentalism",
+      "art museums",
+      "food",
+      "ultimate frisbee",
+      "progressive/political groups on campus",
+      "NUWiT"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Steve",
+    "lastName": "Flanagan",
+    "experience": ["Research coop", "Bountium (self-directed co-op)"],
+    "email": "flanagan.s@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science",
+    "interests": ["track", "Bountium", "entrepreneurship", "Oasis"],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Verda",
+    "lastName": "Bursal",
+    "experience": ["Framework Homeownership", "Generate"],
+    "pronouns": "she/her/hers",
+    "email": "bursal.v@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Cognitive Psychology",
+    "interests": [
+      "Bits&Bots",
+      "Generate",
+      "MULTI",
+      "art",
+      "running",
+      "biking",
+      "hiking",
+      "app development"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Rebecca",
+    "lastName": "Malcolm",
+    "experience": ["Warner Bros. Analytics"],
+    "pronouns": "She/Her",
+    "email": "malcolm.r@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science",
+    "interests": [
+      "NU Game Development Club",
+      "game jams",
+      "hackathons",
+      "local dev meetups",
+      "LGBTQIA+ Resource Center affinity group",
+      "cooking/baking",
+      "jigsaw puzzles",
+      "plants",
+      "literature",
+      "comic books",
+      "sci-fi shows",
+      "anime",
+      "cartoons",
+      "indie games"
+    ]
+  },
+  {
+    "firstName": "Catherine",
+    "lastName": "Romanova",
+    "experience": ["ezCater", "InsightSquared"],
+    "pronouns": "she/her",
+    "email": "catherinealexa19@gmail.com",
+    "year": "Fifth Year",
+    "major": "Computer Science",
+    "minor": "Biology",
+    "interests": [
+      "Club Ultimate Frisbee",
+      "Peace Thru Play",
+      "hiking",
+      "climbing",
+      "community service",
+      "Alternative Spring Break"
+    ]
+  },
+  {
+    "firstName": "Jenn",
+    "lastName": "Der",
+    "experience": [
+      "Massachusetts Medical Society",
+      "Kyruus",
+      "Certain Lending"
+    ],
+    "pronouns": "she/her",
+    "email": "der.je@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Media Arts",
+    "concentration": "Photo/Video",
+    "interests": [
+      "CoSMO",
+      "HackBeanpot",
+      "baking",
+      "running",
+      "painting",
+      "art"
+    ]
+  },
+  {
+    "firstName": "Isabel",
+    "lastName": "Bolger",
+    "experience": ["Skillz"],
+    "pronouns": "she/her",
+    "email": "bolger.i@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science",
+    "interests": [
+      "Tri Sigma",
+      "Generate",
+      "CoSMO",
+      "guitar",
+      "tennis",
+      "baking",
+      "volunteering",
+      "mentoring"
+    ],
+    "extra": "Participated in NUin"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Melcer",
+    "experience": ["Forward Thinking Systems", "ML research co-op", "Datto"],
+    "pronouns": "He",
+    "email": "dmelcer9@gmail.com",
+    "year": "Fourth Year",
+    "major": "Computer Science",
+    "minor": "Math, Physics",
+    "interests": ["NUHacks", "Times New Roman", "virtual reality"],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Izzy",
+    "lastName": "Berzsenyi",
+    "experience": ["Thermo Fisher Scientific", "AppFolio"],
+    "pronouns": "She/her",
+    "email": "berzsenyi.i@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science",
+    "interests": ["traveling", "NU Women In Tech"],
+    "extra": "Participated in NUin"
+  },
+  {
+    "firstName": "Dania ",
+    "lastName": "Abuhijleh ",
+    "experience": ["Broad Institute of MIT and Harvard"],
+    "pronouns": "She/her/hers",
+    "email": "abuhijleh.d@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer science and Mathematics",
+    "interests": ["weightlifting", "reading", "baking", "cooking", "drawing"],
+    "extra": "International Student"
+  },
+  {
+    "firstName": "Natalie",
+    "lastName": "Hsu",
+    "experience": ["Chewy"],
+    "email": "hsu.na@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science and Interaction Design",
+    "interests": ["illustration", "art", "anime", "bubble tea"],
+    "extra": "Participated in NUin"
+  },
+  {
+    "firstName": "Becca",
+    "lastName": "McBrayer",
+    "experience": [
+      "State Street Global Exchange",
+      "RightHand Robotics",
+      "Alteryx (FeatureLabs)"
+    ],
+    "pronouns": "She/her/hers",
+    "email": "mcbrayer.r@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Math",
+    "interests": ["A cappella (NU Downbeats)", "rock climbing"]
+  },
+  {
+    "firstName": "Katie",
+    "lastName": "Busemeyer",
+    "experience": ["Rue La La", "ezCater", "Bank of America", "Trifacta"],
+    "pronouns": "she/her/hers",
+    "email": "busemeyer.k@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Cognitive Psychology",
+    "interests": [
+      "CoSMO",
+      "Greek life",
+      "intramural soccer",
+      "video games",
+      "reading"
+    ]
+  },
+  {
+    "firstName": "Bryce",
+    "lastName": "DeWitt",
+    "experience": ["MFS", "MullenLowe", "Campfire Technology"],
+    "pronouns": "He/his/him",
+    "email": "dewitt.b@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Business Administration",
+    "concentration": "Finance",
+    "interests": [
+      "Finance & Investment club",
+      "TEDxNortheasternU",
+      "Greek life",
+      "NUHOC"
+    ],
+    "extra": "Participated in NUin"
+  },
+  {
+    "firstName": "Felicia",
+    "lastName": "Zhang",
+    "experience": ["Carbonite", "Google", "Drift", "Facebook"],
+    "pronouns": "she/hers",
+    "email": "zhang.fel@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science",
+    "notes": "Formerly CE/CS for 4 years",
+    "interests": ["NUWIT", "HackBeanpot", "art", " foreign language", "baking"],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Vera",
+    "lastName": "Kong",
+    "experience": ["HubSpot"],
+    "email": "kong.v@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science and Math",
+    "minor": "Music",
+    "interests": [
+      "hackathons",
+      "typetracing",
+      "tetris",
+      "League of Legends",
+      "Generate",
+      "Asian Student Union",
+      "handball"
+    ]
+  },
+  {
+    "firstName": "Irene",
+    "lastName": "Pham",
+    "experience": [
+      "Boston DNA testing start up",
+      "Biotech company",
+      "Roche",
+      "ServiceNow"
+    ],
+    "pronouns": "she her ",
+    "email": "pham.i@husky.neu.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science and Biology",
+    "interests": [
+      "biology",
+      "bioinformatics",
+      "swimming",
+      "baking",
+      "cooking",
+      "research",
+      "health care",
+      "reading",
+      "hiking"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Martin",
+    "lastName": "Petrauskas",
+    "experience": ["Integrity Security Services", "Department of Defense"],
+    "pronouns": "He/Him/His",
+    "email": "petrauskas.m@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Cybersecurity",
+    "minor": "Math",
+    "concentration": "Cyber Operations",
+    "interests": ["frisbee", "surfing", "hiking", "being outdoorsr"]
+  },
+  {
+    "firstName": "Cara",
+    "lastName": "Sciorilli",
+    "experience": ["iSpecimen", "Pivotal", "Mercari"],
+    "pronouns": "she/her/hers",
+    "email": "sciorilli.c@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Finance",
+    "interests": [
+      "gymnastics",
+      "Generate",
+      "Peace Through Play",
+      "Kappa Kappa Gamma",
+      " Relay for Life",
+      "beach",
+      "skiing"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Shreya",
+    "lastName": "Yalamanchili",
+    "experience": ["Bluebird Bio"],
+    "pronouns": "she/her/hers",
+    "email": "yalamanchili.s@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science & Business Administration",
+    "interests": [
+      "Women in technology",
+      "Northeastern Breakfast Club",
+      "Active Minds",
+      "painting",
+      "digital art"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Ali",
+    "lastName": "Schueler",
+    "experience": ["Jounce Therapeutics"],
+    "pronouns": "She/Her/Hers",
+    "email": "schueler.a@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science and Biology",
+    "interests": [
+      "NUWIT",
+      "Kappa Delta Sorority",
+      "running",
+      "yoga",
+      "reading"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Jean",
+    "lastName": "Zhang",
+    "experience": ["PowerAdvocate", "HubSpot", "Facebook"],
+    "pronouns": "she/her",
+    "email": "zhang.je@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science Major",
+    "minor": "Interaction Design",
+    "interests": [
+      "Scout",
+      "NU Women in Tech",
+      "Asian Student Union",
+      "cooking",
+      "baking",
+      "Asian Media",
+      " trying new places to eat"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Kelsey",
+    "lastName": "Esposito",
+    "experience": ["Eaton Vance", "Facebook"],
+    "pronouns": "she/her/hers",
+    "email": "esposito.ke@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Data Science",
+    "minor": "Math",
+    "interests": [
+      "No Limits Dance Crew",
+      "embroidery",
+      "reading",
+      "going to the beach"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Raymond",
+    "lastName": "Huang",
+    "experience": ["Intuit", "Pison", "Facebook"],
+    "pronouns": "he/him/his",
+    "email": "huang.ra@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Media Arts",
+    "concentration": "Animation",
+    "interests": ["CoSMO", "animation club"]
+  },
+  {
+    "firstName": "Megan",
+    "lastName": "Lau",
+    "experience": ["Mark43", "MineralTree", "CameraIQ"],
+    "pronouns": "she, her, hers",
+    "email": "lau.m.megan@gmail.com",
+    "year": "Fifth Year",
+    "major": "Computer Science and Marketing Analytics",
+    "interests": [
+      "Asian Student Union",
+      "pan asian american clubs",
+      "NUWIT",
+      "greek life",
+      "hackathons",
+      "animal crossing",
+      "memes"
+    ]
+  },
+  {
+    "firstName": "Jolene",
+    "lastName": "Okamoto",
+    "experience": ["Med-tech startup"],
+    "pronouns": "she/her/hers",
+    "email": "okamoto.j@northeastern.edu",
+    "year": "Third Year",
+    "major": "Computer Science",
+    "minor": "Interaction Design",
+    "interests": ["ASU", "volunteering", "games", "cooking"]
+  },
+  {
+    "firstName": "Andrei",
+    "lastName": "Lougovtsov",
+    "experience": ["ThriveHive", "Wayfair", "contracting for various places"],
+    "pronouns": "He/Him",
+    "email": "lougovtsov.an@northeastern.edu",
+    "year": "Fourth Year",
+    "major": "Computer Science and Finance",
+    "interests": [
+      "Ultimate Frisbee Club Team",
+      "Enabling Engineering",
+      "tennis",
+      "swimming",
+      "exercise"
+    ],
+    "extra": "Honors student"
+  },
+  {
+    "firstName": "Daniel",
+    "lastName": "Goldstein",
+    "experience": [
+      "PowerAdvocate",
+      "Broad Institute",
+      "Oxford University",
+      "Slack"
+    ],
+    "pronouns": "He / Him / His",
+    "email": "goldstein.d@northeastern.edu",
+    "year": "Fifth Year",
+    "major": "Computer Science and Math",
+    "interests": [
+      "TA for Fundies ",
+      "Husky Ambassador",
+      "running",
+      "muay thai"
+    ],
+    "extra": "Honors student"
+  }
+]

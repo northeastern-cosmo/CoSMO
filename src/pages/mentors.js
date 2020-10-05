@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import TempMessage from "../components/mentor/mentorTempMessage"
@@ -62,8 +63,31 @@ const MentorPage = styled.div`
     padding: 0px 75px;
   }
 `
+const hasStarted = true
 
-const MentorsPage = ({ hasStarted = false }) => {
+const MentorsPage = () => {
+  const data = useStaticQuery(graphql`
+    query getMentors {
+      allMentorsJson {
+        nodes {
+          email
+          experience
+          firstName
+          interests
+          lastName
+          major
+          minor
+          concentration
+          pronouns
+          experience
+          year
+        }
+      }
+    }
+  `)
+
+  const mentors = data.allMentorsJson.nodes
+
   return (
     <Layout>
       <MentorPage>
@@ -72,7 +96,7 @@ const MentorsPage = ({ hasStarted = false }) => {
         </TitleContainer>
         {hasStarted ? (
           <>
-            <SearchContainer>
+            {/* <SearchContainer>
               <SearchText>
                 Search for someone by name, experience, skills, etc!
               </SearchText>
@@ -83,9 +107,16 @@ const MentorsPage = ({ hasStarted = false }) => {
                 />
                 <SearchIcon className="material-icons">search</SearchIcon>
               </SearchBoxText>
-            </SearchContainer>
+            </SearchContainer> */}
             <MentorsContainer>
-              {/* <Mentor {...mentor1} /> */}
+              {mentors.map(mentor => {
+                return (
+                  <Mentor
+                    key={`${mentor.firstName}-${mentor.lastName}`}
+                    {...mentor}
+                  />
+                )
+              })}
               <ContactContainer>
                 <ContactBox />
               </ContactContainer>

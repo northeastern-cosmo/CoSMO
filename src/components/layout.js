@@ -25,7 +25,6 @@ const Layout = ({ children, page }) => {
       <Header />
       <div
         style={{
-          margin: `0 auto`,
           maxWidth: 1600,
           flex: "1 0 auto",
         }}
