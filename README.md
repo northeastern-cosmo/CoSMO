@@ -78,18 +78,19 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 This site uses Gatsby, which is a static site generator. Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
 
-We also use React to build the components, so if you're new to React their [documentation](https://reactjs.org/docs/getting-started.html) is a great place to start!
+We also use React to build the components, so if you're new to React, their [documentation](https://reactjs.org/docs/getting-started.html) is a great place to start!
 
 ## 💫 Deploy
 
 Once you've made your changes and are ready to deploy, make sure to push them from your local repository to the remote repository.
 
 Put up a [pull request (PR)](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests) and tag
-@kbusemeyer or @ray10102 for review.
+`@kbusemeyer` or `@ray10102` for review.
 
 Once your PR has been approved feel free to merge it into the `master` branch.
 
 To deploy run `npm run deploy` or `yarn deploy` from the command line, make sure it succeeds and then go to the CoSMO website to see your changes!
 
-_Note: _ Make sure that the deploy succeeds, if there are any errors then they'll pop up in the terminal and you can resolve them.
+If there are any errors then they'll pop up in the terminal and you can resolve them.
+
 This deployment should be going to the `gh-pages` branch so be sure not to delete this branch!
