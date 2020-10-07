@@ -32,6 +32,16 @@ Keep reading to learn how to get started working on the website.
 
     Open the `cosmo` directory in your code editor of choice and edit any of the files. Save your changes and the browser will update in real time!
 
+    ```shell
+    #  Make sure to create a new branch for your changes if you haven't already
+    git checkout -b your-branch-name
+    # Commit your changes
+    git add .
+    git commit -m "your message here"
+    # Push your changes
+    git push # you might have to set the upstream branch here, check your terminal for helpful notes!
+    ```
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
