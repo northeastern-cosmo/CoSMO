@@ -64,7 +64,7 @@ const IndexPage = ({ location }) => {
           easing: "linear",
         },
         {
-          color: "#FFE394",
+          color: "#FFD286",
           duration: 500,
           easing: "linear",
         },
@@ -151,12 +151,12 @@ const IndexPage = ({ location }) => {
       ty: 0,
       fill: [
         {
-          color: "#A6ADD8",
+          color: "#FFD286",
           duration: 500,
           easing: "linear",
         },
         {
-          color: "#FFE394",
+          color: "#495391",
           duration: 500,
           easing: "linear",
         },
@@ -195,7 +195,7 @@ const IndexPage = ({ location }) => {
       ty: 0,
       fill: [
         {
-          color: "#FFE394",
+          color: "#FFD286",
           duration: 500,
           easing: "linear",
         },
@@ -239,7 +239,7 @@ const IndexPage = ({ location }) => {
       ty: 0,
       fill: [
         {
-          color: "#282faf",
+          color: "#495391",
           duration: 500,
           easing: "linear",
         },
@@ -280,7 +280,7 @@ const IndexPage = ({ location }) => {
       tx: 0,
       ty: -50,
       fill: {
-        color: "#282faf",
+        color: "#495391",
         duration: 500,
         easing: "linear",
       },
@@ -311,12 +311,12 @@ const IndexPage = ({ location }) => {
       ty: 0,
       fill: [
         {
-          color: "#282faf",
+          color: "#495391",
           duration: 500,
           easing: "linear",
         },
         {
-          color: "#282faf",
+          color: "#495391",
           duration: 500,
           easing: "linear",
         },

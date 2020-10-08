@@ -4,7 +4,7 @@ import React from "react"
 const SectionContainerBase = styled.div`
   width: 100%;
   min-height: 900px;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: auto;
   z-index: 3;
   position: relative;

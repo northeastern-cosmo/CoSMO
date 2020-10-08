@@ -23,10 +23,10 @@ align-items: center;
 const ItemTitle = styled.div`
 font-family: Nunito Sans;
 font-style: normal;
-font-weight: 500;
-font-size: 42px;
+font-weight: bold;
+font-size: 36px;
+margin-top: -10px;
 color: white;
-letter-spacing: 1.5px;
 `
 
 const Showcase = ({ props }) => {

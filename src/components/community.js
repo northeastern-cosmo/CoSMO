@@ -17,7 +17,6 @@ const TitleContainer = styled.div`
 const Name = styled.p`
   width: 530px;
   font-family: Nunito Sans;
-  font-style: italic;
   font-weight: bold;
   font-size: 48px;
   line-height: 65px;
