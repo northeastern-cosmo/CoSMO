@@ -69,12 +69,11 @@ const Mentorship = ({ callbacks }) => {
             student at Northeastern, or a career in computer science.
           </InfoSection>
           <InfoSection>
-            The mentorship program runs during both the fall and spring semesters.
-            No experience is necessary to join the program. <Link href="mailto:nucsmo@gmail.com">Reach out to us</Link> about
-            more information regarding the mentorship program for the Fall 2020 semester.
-          </InfoSection>
-          <InfoSection>
-            Check out our mentorship FAQ or contact us for more information!
+            The mentorship program runs during both the fall and spring
+            semesters. No experience is necessary to join the program.{" "}
+            <Link href="mailto:nucsmo@gmail.com">Reach out to us</Link> about
+            more information regarding the mentorship program for the Fall 2020
+            semester.
           </InfoSection>
         </InfoContainer>
       </TitleContainer>
