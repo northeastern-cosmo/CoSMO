@@ -21,6 +21,7 @@ Keep reading to learn how to get started working on the website.
 
     ```shell
     cd cosmo/
+    npm run install
     npm run develop # or if you use yarn, yarn start
     ```
 
