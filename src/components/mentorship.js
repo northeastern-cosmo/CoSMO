@@ -3,10 +3,6 @@ import SectionContainer from "./section-container"
 import { useScrollMonitor } from "scrollmonitor-hooks"
 import React, { useRef } from "react"
 
-// FALL 2020 SIGN UP FORM LINKS
-const mentorFormURL = "https://forms.gle/mSW8FLArBCzpqeAq8"
-const menteeFormURL = "https://forms.gle/k4LWyKxYKR94pMUN8"
-
 const TitleContainer = styled.div`
   padding: 100px 100px 0px 100px;
   display: flex;
@@ -48,7 +44,7 @@ const InfoContainer = styled.div`
 `
 
 const Link = styled.a`
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   color: #ffffff;
 `
@@ -73,11 +69,9 @@ const Mentorship = ({ callbacks }) => {
             student at Northeastern, or a career in computer science.
           </InfoSection>
           <InfoSection>
-            The mentorship program runs during both the fall and spring The
-            mentorship program runs during both the fall and spring semesters.
-            Sign-ups are currently open for semesters. No experience is
-            necessary to join the program. <Link href={menteeFormURL}>Mentees</Link> and everyone who signs up
-            will be paired with a <Link href={mentorFormURL}>mentor</Link>.
+            The mentorship program runs during both the fall and spring semesters.
+            No experience is necessary to join the program. <Link href="mailto:nucsmo@gmail.com">Reach out to us</Link> about
+            more information regarding the mentorship program for the Fall 2020 semester.
           </InfoSection>
           <InfoSection>
             Check out our mentorship FAQ or contact us for more information!
