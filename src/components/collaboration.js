@@ -10,20 +10,17 @@ const TitleContainer = styled.div`
   align-items: flex-end;
   position: relative;
   height: 100%;
-  max-width: 1200px;
   margin: auto;
 `
 
 const Name = styled.p`
   width: 530px;
   font-family: Nunito Sans;
-  font-style: italic;
   font-weight: bold;
   font-size: 48px;
   line-height: 65px;
   color: #ffffff;
   text-align: right;
-  margin-right: 30px;
   margin-bottom: 40px;
 `
 const InfoSection = styled.div`
@@ -33,7 +30,7 @@ const InfoSection = styled.div`
   font-weight: normal;
   font-size: 22px;
   line-height: 33px;
-  text-align: left;
+  text-align: right;
   color: white;
   text-wrap: pre;
   margin-bottom: 30px;

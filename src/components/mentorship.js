@@ -10,37 +10,33 @@ const menteeFormURL = "https://forms.gle/k4LWyKxYKR94pMUN8"
 const TitleContainer = styled.div`
   padding: 100px 100px 0px 100px;
   display: flex;
+  max-width: 1400px;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: flex-end;
   position: relative;
   height: 100%;
-  max-width: 1200px;
   margin: auto;
 `
 
 const Name = styled.p`
-  width: 530px;
+  width: 100%;
   font-family: Nunito Sans;
-  font-style: italic;
   font-weight: bold;
   font-size: 48px;
   line-height: 65px;
   color: #ffffff;
-  text-align: right;
-  margin-right: 30px;
 `
 const InfoSection = styled.div`
   max-width: 700px;
   font-family: Nunito Sans;
   font-style: normal;
-  font-weight: 600;
   font-size: 22px;
   line-height: 33px;
   text-align: left;
   color: black;
   text-wrap: pre;
   margin-bottom: 30px;
-  color: #041454;
+  color: #ffffff;
 `
 const InfoContainer = styled.div`
   display: flex;
@@ -50,32 +46,11 @@ const InfoContainer = styled.div`
   height: 100%;
   width: 100%;
 `
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 500px;
-
-  flex-wrap: wrap;
-  margin: 26px auto;
-`
 
 const Link = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
-  color: #5c92d7;
-`
-const Button = styled.a`
-  text-decoration: none;
-  background-color: #041454;
-  color: white;
-
-  font-size: 1.25rem;
-
-  padding: 20px 40px;
-  border-radius: 10px;
-
-  cursor: pointer;
+  color: #ffffff;
 `
 
 const Mentorship = ({ callbacks }) => {
@@ -101,12 +76,8 @@ const Mentorship = ({ callbacks }) => {
             The mentorship program runs during both the fall and spring The
             mentorship program runs during both the fall and spring semesters.
             Sign-ups are currently open for semesters. No experience is
-            necessary to join the program, and
-            <Link href={mentorFormURL}> mentors</Link> and everyone who signs up
-            will be paired with a mentor.
-            <Link href={menteeFormURL}> mentees</Link>. No experience is
-            necessary to join the program, and everyone who signs up will be
-            paired with a mentor.
+            necessary to join the program. <Link href={menteeFormURL}>Mentees</Link> and everyone who signs up
+            will be paired with a <Link href={mentorFormURL}>mentor</Link>.
           </InfoSection>
           <InfoSection>
             Check out our mentorship FAQ or contact us for more information!

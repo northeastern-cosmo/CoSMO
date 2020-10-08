@@ -36,7 +36,6 @@ const Title = styled.div`
 `
 
 const Cosmo = styled.div`
-  font-style: italic;
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
