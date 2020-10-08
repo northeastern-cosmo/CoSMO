@@ -6,7 +6,7 @@ import React, { useRef } from "react"
 import SocialMedia from "../components/social-media/social-media"
 
 const TitleContainer = styled.div`
-  padding: 80px 100px 0px 100px;
+  padding-top: 80px;
 `
 const University = styled.p`
   font-family: Nunito Sans;
