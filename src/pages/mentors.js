@@ -48,6 +48,17 @@ const SearchIcon = styled.span`
   top: 3px;
   right: 15px;
 `
+const HiddenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Nunito Sans;
+  color:  #020a39;
+  align-items: flex-end;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: 80px;
+`
 
 export const TitleContainer = styled.h1`
   font-size: calc(48px + (96 - 24) * ((100vw - 320px) / (1600 - 320)));
@@ -94,6 +105,9 @@ const MentorsPage = () => {
         <TitleContainer>
           <div>Our Mentors</div>
         </TitleContainer>
+        <HiddenContainer>
+        🦴 ok, fine. we'll throw you a bone, where do the ghosts live? what doesn't exist?
+        </HiddenContainer>
         {hasStarted ? (
           <>
             {/* <SearchContainer>

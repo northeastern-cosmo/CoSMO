@@ -48,6 +48,18 @@ const Link = styled.a`
   font-weight: bold;
   color: #ffffff;
 `
+const HiddenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Nunito Sans;
+  color:  #020a39;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: 80px;
+  opacity: 10%;
+`
+
 
 const Mentorship = ({ callbacks }) => {
   const ref = useRef(null)
@@ -56,6 +68,9 @@ const Mentorship = ({ callbacks }) => {
     <SectionContainer callbacks={callbacks}>
       <TitleContainer>
         <Name>Rooted in Mentorship</Name>
+        <HiddenContainer>
+        💀 where are the mentors hiding
+      </HiddenContainer>
         <InfoContainer>
           <InfoSection ref={ref}>
             We're providing resources to help guide students interested in

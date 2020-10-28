@@ -64,7 +64,7 @@ const Community = ({ callbacks }) => {
           <InfoSection>
             CoSMO plans events where students are able to meet others and start
             to make connections, or at the very least learn about different
-            viewpoints and aspects of computer science from their peers.
+            viewpoints and aspects of computer <span style={{opacity: '20%'}}>🍬 </span>science from their peers.
           </InfoSection>
         </InfoContainer>
       </TitleContainer>

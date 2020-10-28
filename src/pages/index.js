@@ -484,6 +484,7 @@ const IndexPage = ({ location }) => {
           <Mentorship callbacks={getCallbacks(2)} />
           <Collaboration callbacks={getCallbacks(3)} />
           <Community callbacks={getCallbacks(4)} />
+          <span style={{opacity: '50%', 'float':'right'}}>🍫 trick or treat, the final step is down below </span>
         </Background>
       </Layout>
     </>

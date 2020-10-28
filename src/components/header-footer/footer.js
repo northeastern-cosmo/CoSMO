@@ -55,9 +55,12 @@ const Footer = () => {
           </Layout>
           <Layout align="flex-end" direction="column">
             <Title style={{ marginTop: "-7px" }}>
-              Follow us on social media!
+              Follow us on social media! 
             </Title>
             <SocialMedia />
+            <Title style={{marginTop: '-10px'}}>
+            <span style={{color: '#020a39'}}>dm us the treats you collected on instagram</span> 🦇
+            </Title>
           </Layout>
         </Layout>
       </FooterContainer>

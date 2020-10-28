@@ -45,7 +45,17 @@ const InfoContainer = styled.div`
   height: 100%;
   width: 100%;
 `
-
+const HiddenContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: Nunito Sans;
+  color:  #020a39;
+  align-items: flex-end;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: 80px;
+`
 const Landing = ({ callbacks }) => {
   const ref = useRef(null)
   useScrollMonitor(ref, callbacks)
@@ -55,6 +65,11 @@ const Landing = ({ callbacks }) => {
         <University>Northeastern University</University>
         <Name ref={ref}>Computer Science Mentoring Organization</Name>
       </TitleContainer>
+      <HiddenContainer>
+        🎃 welcome to our *spooky* scavenger hunt,
+        can you find all the hidden halloween emojis? <br />
+        try highlighting, clicking, and inspecting elements
+      </HiddenContainer>
       <InfoContainer>
         <InfoSection>
           Northeastern's Computer Science Mentoring Organization serves to
