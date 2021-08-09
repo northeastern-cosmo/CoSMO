@@ -72,7 +72,7 @@ const Mentorship = ({ callbacks }) => {
             The mentorship program runs during both the fall and spring
             semesters. No experience is necessary to join the program.{" "}
             <Link href="mailto:nucsmo@gmail.com">Reach out to us</Link> about
-            more information regarding the mentorship program for the Fall 2020
+            more information regarding the mentorship program for the Fall 2021
             semester.
           </InfoSection>
         </InfoContainer>
