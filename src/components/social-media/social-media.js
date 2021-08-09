@@ -61,6 +61,14 @@ const SocialMedia = ({ children, direction = "" }) => {
             alt="link to cosmo's github"
           />
         </Link>
+      <Link href="https://www.linkedin.com/company/neu-cosmo/">
+        <LogoContainer
+            src={icons.linkedin}
+            width={WIDTH_HEIGHT}
+            height={WIDTH_HEIGHT}
+            alt="link to cosmo's linkedin"
+        />
+      </Link>
         <Link href="https://anchor.fm/nu-cosmo">
           <LogoContainer
             src={icons.podcast}
