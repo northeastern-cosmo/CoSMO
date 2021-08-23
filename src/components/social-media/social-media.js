@@ -8,7 +8,7 @@ import { Layout } from "../header-footer/footer"
 const WIDTH_HEIGHT = "45"
 
 const Link = styled.a`
-  display: inline-flex;
+  display: inline-flex;3
 `
 
 const IconContainer = styled.div`
